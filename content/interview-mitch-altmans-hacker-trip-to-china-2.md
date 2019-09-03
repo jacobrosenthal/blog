@@ -8,11 +8,11 @@ aliases = ["/post/23174345733/interview-mitch-altmans-hacker-trip-to-china-2", "
 tags = ["text"]
 +++
 
-From April 3rd to May 3rd I visited China with Mitch Altman's second, [hacker trip to China](https://www.noisebridge.net/wiki/NoisebridgeChinaTrip2). We visited five hackerspaces, two Maker Faires, Seeed Studios, factories and lots more! I asked Mitch a series of questions about how the trip came about, what he saw, his thoughts on traveling to a country with a poor human rights record, and what madness he's up to next! 
+From April 3rd to May 3rd I visited China with Mitch Altman's second, [hacker trip to China](https://www.noisebridge.net/wiki/NoisebridgeChinaTrip2). We visited five hackerspaces, two Maker Faires, Seeed Studios, factories and lots more! I asked Mitch a series of questions about how the trip came about, what he saw, his thoughts on traveling to a country with a poor human rights record, and what madness he's up to next!
 
 **What is this China trip thing? Where did you go?**
 
-<!-- more --> 
+<!-- more -->
 
 This is my second Hacker Trip To China.  After hearing about a [trip](http://www.evilmadscientist.com/article.php/shenzhen) to China that Bunny Huang (of Chumby, and otherwise open source hardware guru) organized, and seeing how people involved loved it so much, I invited hackers from around the world to go with me on my (mostly) annual trip to China to visit my manufacturer.  That was the end of 2009.  At that point, there were no hackerspaces in China.  When I went to China in April-2010, there were two hackerspaces.  And, of course, I visited them.  And met lots of way cool people.  Which I connected.  And got them excited to do their own Maker Faire type event in Beijing.  And poked lots of people relentlessly to encourage them to start their own hackerspace.  One year later, there are 6 hackerspaces in China, with more being planned.  I invited 8 people to travel with me to again visit my manufacturer, but also to go to every city in China with a hackerspace (Hong Kong, Shenzhen, Shanghai, Hangzhou, and two in Beijing), culminating with the big Maker Carnival in Beijing.  But, a few months before our trip, Seeed Studio, who I visited last year, got their Shenzhen Mini Maker Faire going, and they scheduled it so that our Hacker Trip To China would be in Shenzhen during their Faire.  We were shown around by local geeks everywhere we went.  And we got to see some manufacturing in process so that we can get a feel for how many of the things we use in our day-to-day-lives come into being.  And, of course, we got to do cultural and tourist things as well.
 
@@ -41,7 +41,7 @@ Except for knowing me, hardly anyone knew each other before the trip -- and two 
 Everywhere we went the accommodations are somewhat minimal, but clean.  The cost was about $25 per person per night.  All double rooms.
 
 My flight was $34.30, because I have so many frequent flyer miles (and that was the fee).  But round trip to China is often as low as $680.  I'm not sure what it would have cost me for this trip **_(editors note: my flight was ~$1100 USD from Phoenix to San Fran to Hong Kong)_**. My total costs for this trip came to $1,961.71 .  Here's the breakdown:
-
+```text
      lodging:  $828.59 for 32 nights (~$25/night)
 
      transportation:  $494.53 (including planes, trains, mass transit, taxis)
@@ -53,7 +53,7 @@ My flight was $34.30, because I have so many frequent flyer miles (and that was 
      Chinese visa:  $150.84  (visa, plus photos for visa)
 
      laundry:  $11.60
-
+```
 I also bought a lot of parts for electronic kit-making and playing (not included in the above), plus 2 suitcases to carry the extra parts home:  $484.49
 
 I also bought 4 custom-made pants and 8 shirts (not included in the above):   $135.12

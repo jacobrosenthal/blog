@@ -8,4 +8,4 @@ aliases = ["/post/170736249242/the-spark-gap-podcast-episode-8", "/post/the-spar
 tags = ["text"]
 +++
 
-I recently appeared on my buddy Karl’s new podcast, [Spark Gap Podcast Episode 8](http://thesparkgap.net/the-spark-gap-podcast-episode-8/) this week to talk about “iot”. Join us, won’t you?
+I recently appeared on my buddy Karl’s new podcast, [Spark Gap Podcast Episode 8](http://thesparkgap.net/the-spark-gap-podcast-episode-8/) this week to talk about "iot". Join us, won’t you?

@@ -10,7 +10,7 @@ tags = ["text"]
 
 ![image](/images/tumblr_inline_p1uzd63vpE1rp3p4d_540.jpg)
 
-I've been torn on what 3d printing technology to look into next.  The Fakerbot has still been far too finicky and far too difficult for most of our users to use on a regular basis. 
+I've been torn on what 3d printing technology to look into next.  The Fakerbot has still been far too finicky and far too difficult for most of our users to use on a regular basis.
 
 I've personally moved away from the idea of the Rep Rap for now. I'ts a beautiful goal, but I'd rather spend the next 5 years actually 3d printing rather than figuring out how to replace all the precision parts and processes with cheap and ubiquitous not-terrible ones. Precision in precision out...
 

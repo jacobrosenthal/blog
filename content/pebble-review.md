@@ -8,7 +8,7 @@ aliases = ["/post/46376325625/pebble-review", "/post/pebble-review"]
 tags = ["text"]
 +++
 
-Colin loaned me his Pebble until he gets back into town next month and I haven't seen anyone else in our circle review it, so here goes. 
+Colin loaned me his Pebble until he gets back into town next month and I haven't seen anyone else in our circle review it, so here goes.
 
 **Who Needs the Time?**
 
@@ -16,11 +16,11 @@ First some setup. I don't wear watches and almost never have. Its a modality I t
 
 Thus I was incredibly surprised to find that after even ONE day of Pebble usage, I felt naked without it.
 
-<!-- more --> 
+<!-- more -->
 
 **Fit, Finish, Setup**
 
-First the boring stuff. I've found the watch to be very pleasant I'm proud to wear it on my wrist daily. It does slightly rotate off my wrist which I find annoying, but perhaps this could be solved with a new or longer watch band.  Further I've found the build quality to be pretty good. Theres a slight rainbow-ing on the screen apparently due to the glue process, but I can live with it. 
+First the boring stuff. I've found the watch to be very pleasant I'm proud to wear it on my wrist daily. It does slightly rotate off my wrist which I find annoying, but perhaps this could be solved with a new or longer watch band.  Further I've found the build quality to be pretty good. Theres a slight rainbow-ing on the screen apparently due to the glue process, but I can live with it.
 
 It was extremely easy to set up. I'm sad to report that as usual the locked down iOS ecosystem loses out on the majority of the notifications, only receiving phone calls, texts, and music information and control. Even though it sounds limiting, thats actually enough for me to recommend the pebble with just those few notifications. However, I went the extra mile and used my jailbreak to full push notifications which I highly recommend.
 
@@ -32,7 +32,7 @@ It turns out Music is one of my favorite features. I listen to podcasts constant
 
 What REALLY surprised me about the watch, however, was how blown away I was by the vibrator in the watch. Most people know that I've been doing research and development in haptics for several years now. I obviously understand the benefits of haptics and am somewhat biased, but I was curious to see what I'd think of the real world implementation.
 
-I immediately found it incredibly freeing. As we all know phantom vibrations have completely poisoned the haptics well when it comes to our phones. We can't leave them on vibrate because in the back of our mind we know that is as good as turning them off. 
+I immediately found it incredibly freeing. As we all know phantom vibrations have completely poisoned the haptics well when it comes to our phones. We can't leave them on vibrate because in the back of our mind we know that is as good as turning them off.
 
 With vibration on my wrist I found I didn't worry about missing anything on my phone and I was happy to silence it permanently. I also loved using vibration as my alarm. I hate alarms and they don't tend to even wake me up so adding vibration to my wrist really was a fun and new way to wake up. It should be noted that Pebble actually deals with alarms in its own OS, not in iOS, but besides this setback I found alarms easy enough to set and delete.
 

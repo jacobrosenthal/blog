@@ -12,7 +12,7 @@ If you’ll remember from previous posts my wishlist was to upload thumbnails(wh
 
 Over Christmas break [Zach Giles](http://zgiles.github.com/) brought down his Flu Card we’ve been wanting to play with. We were hoping this little Eye-Fi clone, running linux, would allow us to make smarter upload decisions allowing us to do live uploads from the GoPro.
 
-What we were able to do was exactly that and more—Check out Zach’s [first post](http://zgiles.github.com/) to see what and how we did. 
+What we were able to do was exactly that and more—Check out Zach’s [first post](http://zgiles.github.com/) to see what and how we did.
 
 Now the bad news. The Flu Card doesn’t start the linux partition properly on the Go Pro 3 when in timelapse mode. Single shot seems to work ok, but thats not what our current technology is using. Timelapse works fine on the Hero2, but we get less than half battery life there and were expecting probably a 50% reduction in battery due to wireless meaning the only feasible place to do this is on the Hero3.
 

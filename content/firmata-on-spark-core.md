@@ -14,7 +14,7 @@ tags = ["text"]
 
 As part of my work with the soon to be launched [Octoblu](https://www.octoblu.com "Octoblu") I've been working on porting Firmata over to [Spark Core](https://www.spark.io). The Spark's arduino abstraction has really come along making it the cheapest connected arduino out there, and me pretty excited about it.
 
-<!-- more --> 
+<!-- more -->
 
 A firmata will allow us to command and control our sparks from all the existing firmata interfaces out there like Johnny 5 in Node or the many native interfaces. I should note Chris Williams has Voodoo Spark https://github.com/voodootikigod/voodoospark which is an RPC replacement for Firmata on Spark. From the Readme
 
@@ -24,7 +24,7 @@ That being said not relying on the Spark server or requiring you to have a TCP S
 
 UPDATE: Firmata has forked the project for the Spark and I'm developing in dev at https://github.com/firmata/spark#dev with production being at https://github.com/firmata/spark
 
-While a full working branch of octoblu (nea skynet) mqtt and core-firmware is over at  
+While a full working branch of octoblu (nea skynet) mqtt and core-firmware is over at
 https://github.com/jacobrosenthal/core-firmware/tree/skynet-mqtt-firmata
 
 The branch is working for minor interactions, but theres still a bit to be done.

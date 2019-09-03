@@ -8,4 +8,4 @@ aliases = ["/post/33765634442/recently-some-people-at-our-hackerspace-heatsync",
 tags = ["video"]
 +++
 
-[![Recently some people at our hackerspace HeatSync Labs asked for me to update them on The State of Body Computing. This is a...](https://i.ytimg.com/vi/RNx3AtNQ7Dg/hqdefault.jpg)](https://www.youtube.com/watch?v=RNx3AtNQ7Dg)
+{{ youtube(id="RNx3AtNQ7Dg") }}

@@ -12,19 +12,19 @@ tags = ["text"]
 
 Another day, another Firmata fork. I spent the last few days messing around with getting Firmata working on the [LightBlue BLE Bean](http://punchthrough.com/bean/). I had previously written the [Node NPM package for the Bean](https://www.npmjs.org/package/ble-bean) as an exercise to get to know both Node and the Bean. Why not give it full Firmata control?
 
-You need firmata on your bean from [my clone](https://github.com/jacobrosenthal/arduino/blob/bean/examples/StandardFirmata/StandardFirmata.ino) and [@monteslu](https://twitter.com/monteslu) has put together a [node example turning my bean package into a serial port and hooking it to firmata.js!](https://github.com/monteslu/bean-serial/tree/master/examples/firmata) 
+You need firmata on your bean from [my clone](https://github.com/jacobrosenthal/arduino/blob/bean/examples/StandardFirmata/StandardFirmata.ino) and [@monteslu](https://twitter.com/monteslu) has put together a [node example turning my bean package into a serial port and hooking it to firmata.js!](https://github.com/monteslu/bean-serial/tree/master/examples/firmata)
 
-<!-- more --> 
+<!-- more -->
 
 The big gotchas Ive found so far are is that Punchthrough actually moved pins around in pins_arduino.h. There should be a fix for this but Standard firmata writes pins in order on the port.. So for now I'm just using the true pin names which map like so:
 
-a0 -> a4->d18  
-a1 -> a5->d19  
-d0 -> d6 -- Unavailable right now from firmata  
-d1 -> d9 -- Unavailable right now from firmata  
-d2 -> d10  
-d3 -> d11  
-d4 -> d12  
+a0 -> a4->d18
+a1 -> a5->d19
+d0 -> d6 -- Unavailable right now from firmata
+d1 -> d9 -- Unavailable right now from firmata
+d2 -> d10
+d3 -> d11
+d4 -> d12
 d5 -> d13
 
 Beyond that I would avoid all other pins which still exist and could be hooked up to anything for all I know. This sketch doesnt protect any pins. Setting anything else very well may take your bean offline or worse..

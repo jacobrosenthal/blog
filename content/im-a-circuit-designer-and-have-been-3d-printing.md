@@ -8,4 +8,4 @@ aliases = ["/post/25789353639/im-a-circuit-designer-and-have-been-3d-printing", 
 tags = ["video"]
 +++
 
-[![I'm a circuit designer and have been 3D printing for years. I've come to the point now where I want to enclose my electronics to...](https://i.ytimg.com/vi/72M6l-owuxg/hqdefault.jpg)](https://www.youtube.com/watch?v=72M6l-owuxg)
+{{ youtube(id="72M6l-owuxg") }}

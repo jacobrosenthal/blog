@@ -28,7 +28,7 @@ _Why are they so angry at this person, their project, or the way they they were 
 
 And thats all just to stay afloat, let alone make a dent in the problem.
 
-As a result we've got the policy and administrative types screaming at us to make more rules in order to deal with all the jerks. 
+As a result we've got the policy and administrative types screaming at us to make more rules in order to deal with all the jerks.
 
 However, I hope we can think critically and see that rules don't make unhealthy people healthy.
 

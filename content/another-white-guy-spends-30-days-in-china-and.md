@@ -12,13 +12,13 @@ I've been asked over and over again about my experiences in China during my [30 
 
 **How do [those people] live under such repression?**
 
-<!-- more --> 
+<!-- more -->
 
 Just fine, actually. They distrust and dislike their government the same as we distrust ours--and they're pretty vocal about how stupid and corrupt the whole fucking shell game is. Sound like anywhere else in the world? There is no such thing as communism or capitalism in the 21st century global economy. Don't get too smug about your freedom in an age of global terrorism, indefinite wars, patriot acts, and the NDAA. All governments seek to control their peoples interactions 'for the greater good.'
 
 **So  how was it living under the repression of The Great Firewall?**
 
-It's there, it sucks. The firewall and VPN slow everything down to a crawl where the internet isn't already slow or over-saturated anyway. The sad thing to report is it's effective. Even smart people I talked to at hackerspaces obviously knew about VPNs, and had used them to get around the firewall, but for their day to day use it was way too much of a pain in the ass for them to actually load one up. Non savvy types I talked to understood vaguely that there were sites they couldn't see but it didn't matter to them. This actually brought about a revelation, which is that the Great Firewall is as much or more for business reasons at this point, as censorship. Why would anyone go through the trouble of loading a firewall to see Twitter or Facebook when their friends are all on Weibo and Douban? Who needs Paypal, you can pay your rent on Alipay. Need to get to Amazon/Ebay/Etsy? Oh thats called Taobao here. 
+It's there, it sucks. The firewall and VPN slow everything down to a crawl where the internet isn't already slow or over-saturated anyway. The sad thing to report is it's effective. Even smart people I talked to at hackerspaces obviously knew about VPNs, and had used them to get around the firewall, but for their day to day use it was way too much of a pain in the ass for them to actually load one up. Non savvy types I talked to understood vaguely that there were sites they couldn't see but it didn't matter to them. This actually brought about a revelation, which is that the Great Firewall is as much or more for business reasons at this point, as censorship. Why would anyone go through the trouble of loading a firewall to see Twitter or Facebook when their friends are all on Weibo and Douban? Who needs Paypal, you can pay your rent on Alipay. Need to get to Amazon/Ebay/Etsy? Oh thats called Taobao here.
 
 **Did we feel safe [from petty crime]?**
 

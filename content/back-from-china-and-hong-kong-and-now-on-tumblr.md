@@ -8,4 +8,4 @@ aliases = ["/post/22564069967/back-from-china-and-hong-kong-and-now-on-tumblr", 
 tags = ["photo"]
 +++
 
-![](https://66.media.tumblr.com/tumblr_m3ms1rSkCD1rvz64lo1_1280.jpg)
+![image](/images/tumblr_m3ms1rSkCD1rvz64lo1_1280.jpg)

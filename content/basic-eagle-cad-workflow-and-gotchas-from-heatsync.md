@@ -8,4 +8,4 @@ aliases = ["/post/65920098487/basic-eagle-cad-workflow-and-gotchas-from-heatsync
 tags = ["video"]
 +++
 
-[![Basic Eagle CAD workflow and gotchas from HeatSync Labs Hot Topics series](https://i.ytimg.com/vi/FrxjNNv3wD4/hqdefault.jpg)](https://www.youtube.com/watch?v=FrxjNNv3wD4)
+{{ youtube(id="FrxjNNv3wD4") }}

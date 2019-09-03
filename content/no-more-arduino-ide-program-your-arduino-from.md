@@ -10,7 +10,7 @@ tags = ["text"]
 
 Today I built an [stk500v1 programmer in pure javascript](https://www.npmjs.org/package/stk500) freeing javascript folks from ever having to use the Arduino IDE (or avrdude) again. Instead:
 
-npm install stk500  
+npm install stk500
 node uno.js
 
 <!-- more -->

@@ -22,7 +22,7 @@ First a little googling led to a [teardown of the original square reader](http:/
 
 We wouldn't be using a phone jack in our solution and wouldn't have much processing power for cleaning the signal, but we spent some time trying to amp the signal and read the data. The signal was clearly evident and ampable, but our timeline didn't include reinventing card readers.
 
-Much later in my research I actually found an [amazing talk from the Square engineers which explains everything](http://www.infoq.com/presentations/Android-Squared). Its a must watch. 
+Much later in my research I actually found an [amazing talk from the Square engineers which explains everything](http://www.infoq.com/presentations/Android-Squared). Its a must watch.
 
 In my research I found that Square had actually updated their model to add encryption. The update was touted for security, but I have trouble believing someone could man in the middle your headphone jack. A much more likely reason is using encryption to lock out the rise of the copycat mobile payment solutions like Intuit and Paypal. And of course to stop people like me from tracking down and repurposing handfuls of them.
 

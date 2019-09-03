@@ -14,7 +14,7 @@ Last week I got to talk at about my most recent hack, a flexible haptic strip th
 
 In between working for ASU's Cubic lab on a new [haptic](https://en.wikipedia.org/wiki/Haptics) strip, I was pondering ways to bring haptics more to the forefront. Sure you can buy a [bare motor](https://www.sparkfun.com/products/8449) or [lilypad motor](https://www.sparkfun.com/products/11008) from Sparkfun or elsewhere, but in practice they're a total pain to get working. You need a transistor and its a pain to mount them anywhere you'd want them -- Especially when motors are only really fun when you have a few of them to play with. And lets not even address the cost of say 10 of these modules!
 
-<!-- more --> 
+<!-- more -->
 
 Then it hit me that the cheapest motor driver chip I could buy would be the <14cent [WS28XX](https://www.sparkfun.com/products/10444) series LED drivers that get used on LED light strips!
 

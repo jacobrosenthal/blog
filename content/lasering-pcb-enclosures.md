@@ -12,7 +12,7 @@ tags = ["text"]
 
 This week I used the laser to cut some holes in my enclosures to make way for switches, light pipes, etc. My previous attempts pre-hackerspace (with a dremel) were.. rough.
 
-<!-- more --> 
+<!-- more -->
 
 ![image](/images/tumblr_inline_pk17wqGy4k1rp3p4d_540.jpg)
 

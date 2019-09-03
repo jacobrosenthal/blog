@@ -16,7 +16,7 @@ Recently my hetero life partner [Colin Ho](http://colin-ho.com/) and I turned a 
 
 Take a look at [Colin's post](http://colin-ho.com/the-lifelogger-camera/), but basically,  we pulled some code, schematics and a pinout from [this guy](http://chargeconverter.com/blog/?p=71) and set to implementing it all in one night at our hackerspace [HeatSync Labs](http://www.heatsynclabs.org/). I laid out the board in Eagle and etched it Colin did up all the mechanical designs (laser and 3d printed). The only speciality part we needed was an iPhone connector which, since this is a hackerspace, we had stashed around ;) The result is hosted on [Our Git](https://github.com/Augmentous/LifeLogger).
 
-Colin has been using the camera for ~3 weeks while traveling and Ive been using it for about a week. In my tests at approximately 2 pictures per minute I'm getting 18h hour battery life on a used old GoPro Hero. 
+Colin has been using the camera for ~3 weeks while traveling and Ive been using it for about a week. In my tests at approximately 2 pictures per minute I'm getting 18h hour battery life on a used old GoPro Hero.
 
 The daylight results are awesome. The camera placement with the fish eye lens is perfect. Im picking up conversation partners, meals, a great view of my laptop, phone, and any projects I'm hacking on.
 
@@ -30,7 +30,7 @@ The real drawback so far has been the low light response which is TERRIBLE. Blur
 
 ![image](/images/tumblr_inline_p1w4jdcZ6U1rp3p4d_540.jpg)
 
-This was an average GOOD shot! Still, I got ten awesome photos I wouldn't have had otherwise. 
+This was an average GOOD shot! Still, I got ten awesome photos I wouldn't have had otherwise.
 
 To get around this I'm going to up my shot rate and expect to throw away half of my photos. Related: Anyone seen anything to detect and rate photos based on focus?
 

@@ -12,31 +12,23 @@ I'm mainly working off of the specifications document by the NAMA people located
 
 Pinout:
 
-GRN 6 MCommon 3 NC 
-
+GRN 6 MCommon 3 NC
 RED 5 MTX 2 0DC BRN
-
 BLK 4 MRX 1 34DC WHT
 
 Serial Communications:
 
-9600 
+9600
 
 1 start bit, 8 bits data, 1 mode bit, 1 check bit, 1 stop bit
 
 check bit
-
   * drop carry byte, address+all data bytes.
   * A checksum will not be performed on ACK, NAK, or RET bytes.
 
-
-
 mode bit-
-
   * from vmc sets if byte is address
   * from slave if last byte of data (or finished talking to master?)
-
-
 
 transmit nrz
 

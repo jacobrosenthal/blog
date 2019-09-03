@@ -8,4 +8,4 @@ aliases = ["/post/169172427242/i-was-invited-to-speak-at-uat-on-the-state-of", "
 tags = ["video"]
 +++
 
-[![I was invited to speak at UAT on the state of Additive Manufacturing!](https://i.ytimg.com/vi/WJ02eSfGmMQ/hqdefault.jpg)](https://www.youtube.com/watch?v=WJ02eSfGmMQ)
+{{ youtube(id="WJ02eSfGmMQ") }}

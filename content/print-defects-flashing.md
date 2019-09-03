@@ -19,35 +19,35 @@ This is normally not a big deal, but the polyhedron vertices snap together near 
 As far as I can tell, this is because our Z axis offset is set too low. For good print cohesion, we make sure smear down the first few layers of plastic as hard as possible. This causes flexing in the axis, and that layer is shorter and therefore wider. On the next layer, the same thing happens, but there is less flexing, so flare is slightly less, until the flexing is constant. This gives rise to both the height reduction and the trianglar flaring at the base of the part.
 
 The simplest solution is to adjust the starting point up by the amount of the height reduction, however, we then lose the bed adhesion benefits of smearing the first layer, and raftless printing becomes impossible. In order to get correct, or at least workable geometry while maintaining the print bed adhesion, I've developed the following OpenSCAD script where example.stl is the stl you're altering:
-    
-    
-    file = "example.stl";
-    height_reduction = .8;
-    chamfer_radius = 0.6;
-    chamfer_height = 2.1;
-    epsilon = 0.001;
-    envelope_size = 1000;
-    
-    //Chamfer
-    
-    difference() {
-        //Height Boost
-        union(){
-            translate([0, 0, height_reduction])
-            import(file);
-            linear_extrude( height =height_reduction, center = false) projection(cut = true) import(file);
-        }
-    
-        minkowski() {
-            difference() {
-                translate([0, 0, epsilon/2])
-                cube(size=[envelope_size, envelope_size, epsilon], center = true);
-                linear_extrude( height = 2*epsilon, center = true) projection(cut = true) import(file);
-            }
-            cylinder(r1=chamfer_radius, h =chamfer_height, r2 = 0, center = false, $fn=10);
-        }
+
+```
+file = "example.stl";
+height_reduction = .8;
+chamfer_radius = 0.6;
+chamfer_height = 2.1;
+epsilon = 0.001;
+envelope_size = 1000;
+
+//Chamfer
+
+difference() {
+    //Height Boost
+    union(){
+        translate([0, 0, height_reduction])
+        import(file);
+        linear_extrude( height =height_reduction, center = false) projection(cut = true) import(file);
     }
-    
+
+    minkowski() {
+        difference() {
+            translate([0, 0, epsilon/2])
+            cube(size=[envelope_size, envelope_size, epsilon], center = true);
+            linear_extrude( height = 2*epsilon, center = true) projection(cut = true) import(file);
+        }
+        cylinder(r1=chamfer_radius, h =chamfer_height, r2 = 0, center = false, $fn=10);
+    }
+}
+```
 
 This code simply pads the bottom of the part, so the overall height will be correct, then chamfers it using a [minkowski sum,](http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Minkowski_sum_3/Chapter_main.html) so that when flashing occurs, it brings the part out to the desired perimeter, rather than beyond it.
 

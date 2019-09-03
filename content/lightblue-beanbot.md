@@ -8,10 +8,11 @@ aliases = ["/post/97178122972/lightblue-beanbot", "/post/lightblue-beanbot"]
 tags = ["text"]
 +++
 
-You've Probably seen [kilobot swarm videos](https://www.youtube.com/watch?v=xK54Bu9HFRw#t=19) going around. 
+You've Probably seen [kilobot swarm videos](https://www.youtube.com/watch?v=xK54Bu9HFRw#t=19) going around.
 
-[Luis](tiwtter.com/monteslu) wanted something fun to do with his [LightBlue Bean](http://punchthrough.com/bean/) so I set to turn my bean into a remote controlled swarm style bot. 
+[Luis](tiwtter.com/monteslu) wanted something fun to do with his [LightBlue Bean](http://punchthrough.com/bean/) so I set to turn my bean into a remote controlled swarm style bot.
 
+{{ youtube(id="i1pIDjbR6YY") }}
 <!-- more -->
 
  **DESIGN**
@@ -20,13 +21,11 @@ For construction I followed the rabbit hole to find the [original research for s
 
 I tried a couple designs with common parts and came up with this design:
 
-  * Bean
-  * 3x ~30-50ohm resistor- bigger better because less current and longer battery life, but at some point the motor wont turn on...
-  * Hot glue
-  * Scrap <.5 inch diameter, >.5 inch thick to stick motors to safely (for me it was a laser cut scrap hexagon)
-  * 2x 3v 10mm pancake motors
-
-
+* Bean
+* 3x ~30-50ohm resistor- bigger better because less current and longer battery life, but at some point the motor wont turn on...
+* Hot glue
+* Scrap <.5 inch diameter, >.5 inch thick to stick motors to safely (for me it was a laser cut scrap hexagon)
+* 2x 3v 10mm pancake motors
 
 For the resistors, basic math said had to be around 20-100 ohm resistor. I tried some out and was seeing about 1v drop across motor. Using an LED calculator presuming our 3v coin cell battery source, and wanting less than 40ma (arduino pin limit) of current you can [calculate for our 50-100ohm resistor](http://led.linear1.org/1led.wiz). I've found some motors are finicky to turn on at such low voltage though so I consider 30-50ohm the appropriate resistor.
 

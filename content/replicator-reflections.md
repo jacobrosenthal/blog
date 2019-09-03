@@ -12,7 +12,7 @@ By now you should have noticed that Makerbot has [announced](http://www.makerbot
 
 The major announcements on the Replicator design were dual MK7 nozzles, integrated interface kit, and a removal of the build platform. Sound familiar?
 
-The big difference nobody saw coming seems to be a move towards the z axis being on the platform now and the nozzle being on the x/y, much like the Ultimaker. In the short term this will mean a slight speed increase as the platform won't wobble the print all around during prints. In the long run though, theres such legacy weight in the design that I don't see capability for massive speed increase without further improvements. 
+The big difference nobody saw coming seems to be a move towards the z axis being on the platform now and the nozzle being on the x/y, much like the Ultimaker. In the short term this will mean a slight speed increase as the platform won't wobble the print all around during prints. In the long run though, theres such legacy weight in the design that I don't see capability for massive speed increase without further improvements.
 
 We made some fun of the new design as simple a TOM turned upside down and got some [laughs on the forums](http://groups.google.com/forum/#!topic/makerbot/wG7uSO2Jcmc), but in all honesty these are all great improvements. There are shiny new linear bearings ,injection molded parts, laser cut parts, and custom machined parts--all indicating a more mature product and, in addition to the extras, is a big reason why they've had to increase the price to $1749 with one extruder, $1999 with dual extrusion.
 
