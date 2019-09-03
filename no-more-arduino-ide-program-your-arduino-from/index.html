@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>No more Arduino IDE - Program your Arduino from Node or Chrome</h2>
+    	<div class="info">
+    		<span>1 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>24 November 2014</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>Today I built an <a href="https://www.npmjs.org/package/stk500">stk500v1 programmer in pure javascript</a> freeing javascript folks from ever having to use the Arduino IDE (or avrdude) again. Instead:</p>
+<p>npm install stk500
+node uno.js</p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p>As we continue to reach out and teach new people hardware through software with the <a href="http://nodebots.io/">nodebots project</a> its become painful to have people download the Arduino IDE just to flash Firmata on their devices.</p>
+<p>We're all waiting for Arduino to release their <a href="http://blog.arduino.cc/2014/08/12/news-and-updates-from-the-development-and-beta-testing-of-the-arduino-tre/">web I</a>DE  (presumably open sourcing much of it?) but theres just no eta or guarantees there.</p>
+<p>It struck me as odd this hadn't been done before and I think I know why now. Programming requires the dtr/rts control lines to reset the microcontroller. However, the popular and excellent <a href="https://github.com/voodootikigod/node-serialport">nodeserial</a> from Chris Williams is the standard serial library for Node doesn't support <a href="https://github.com/voodootikigod/node-serialport/issues/384">manual control of the rts/dtr</a> lines necessary for rebooting into bootloader mode.</p>
+<p>As part of my work I added the <a href="https://github.com/jacobrosenthal/node-serialport/tree/controlsignals">OSX bindings</a> to allow me to do just that. That means this only works on OSX right now. We'll need Windows and Linux bindings to get my fork accepted, so please jump in with those if you can.</p>
+<p>Big thanks to the <a href="https://pinocc.io/">Pinoccio</a> mesh Arduino Compatible project, especially their recently open sourced <a href="https://github.com/Pinoccio/js-stk500">js-stk500 project</a>. Large portions of my logic were lifted from the Pinoccio project's stk500v2 implementation. They've been stk500 programming in the browser for a year now. (Chrome's serial has supported control signaling for some time) The Pinoccio chip is based on the Arduino Mega though, which means their implementation was of the incompatible stk500v2 protocol and was unable to be used for Unos.</p>
+<p>Next I'm working on browserifying and bringing my implementation back to the browser and I hope to work with Pinoccio to upstream my work and standardize further.</p>
+<p>Until then, Ill see you all at <a href="http://2014.robotsconf.com/">Robots Conf</a> in a couple weeks :)</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

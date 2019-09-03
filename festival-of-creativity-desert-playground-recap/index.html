@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Festival of Creativity Desert Playground Recap</h2>
+    	<div class="info">
+    		<span>1 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>10 April 2012</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p><img src="/images/tumblr_inline_p43v98yX0z1rp3p4d_540.jpg" alt="" /></p>
+<p>This past winter 2011 <a href="http://doteki.com/?page_id=96">Tim Gerrits</a> and I were lucky to be invited to work with Boyd Branch, Daniel Roth and Southwest Scrap Exchange on a small arts center grant for <a href="https://www.mesaartscenter.com/spark">Mesa Festival of Creativity 2012</a>. The grant concept was a &quot;Desert Playground&quot; which we ended up interpreting as a series of interactive cactuses utilizing Southwest Scrap Exchange creative reuse.</p>
+<hr />
+<p>We brainstormed several different cactus concepts (my favorite that didn't make it was a tumbleweed style cactus via a <a href="https://www.flickr.com/photos/hslphotosync/6610769033/">hamster ball prototype</a> ) but I mainly worked on a motion sensitive pool noodle agave (above)</p>
+<p>The whole project was incredibly price sensitive and for a long time I couldn’t figure out how to afford enough motion sensors to enable interactivity in so many leaves. Tim Gerrits ended up inventing a very clever cheap motion switch based on a spring, copper tube and ball bearing.</p>
+<p><img src="/images/tumblr_inline_p43wj0lp3u1rp3p4d_540.jpg" alt="" /></p>
+<p>With so much wiring I wanted clean consistent connections so I fabbed a mosfet driver screw shield to break out an Arduino Mega for its large amount GPIO. I brainstormed with Jasper a simple <a href="https://github.com/jacobrosenthal/Agave/blob/master/code/agave_final.ino">fall off algorithm that loaded a random number into an array upon motion, then just slowly shifted the bits off until the cactus eventually settled back to stillness</a>. We also added an attract mode so it would freak out if left alone too long.</p>
+<p>The Prickly Pear was the last to come together and became much more art the science.</p>
+<p><img src="/images/tumblr_inline_p43w7k9MVb1rp3p4d_540.jpg" alt="" /></p>
+<p>We developed a concept of ‘flowers’ <a href="https://vimeo.com/49778644">that would slowly ‘die out’ when plucked</a>. I wound coils and hid them in the agave paddles and wired them down to the same mosfet power shield we used in the Agave.</p>
+<p><img src="/images/tumblr_inline_p43wlxhWDX1rp3p4d_540.jpg" alt="" /></p>
+<p>Then I wound another coil around 20oz plastic bottles ‘flowers’. I swapped out caps until I had decent coupling to transfer enough power to light up an led from ~6 inches away.</p>
+<p>Grant based art work is incredibly grueling and I gained a lot of appreciation for those hustling a livelihood or donating their time for work on stuff like this. Not to mention being humbled by trying to build something children can’t destroy over even just a three day period.</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Firmata on Spark Core</h2>
+    	<div class="info">
+    		<span>2 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>31 August 2014</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p><a href="https://www.flickr.com/photos/120586634@N05/14673011704/in/photolist-omB2bq-omwzMe-4t8Crd-4t8APG-esLdLY-nNWAfN-dRjK7x-6Dk9yk-ebRBh1-is6X3r-6gP4A8-jsTyrY-7u2D76-2FafUE-8MneV3-9vQVHk-bcq3W-98EEMH-98HNDy-98HNBU-9NJybd-9NGKrb-9NEtYQ-9NAsCc-9NFVNX-8DrQeq-9M2DZZ-9NKJWL-9NDvLH-6ATnuz-9NGabs-2gFEdE-6WZToY-9NEwpU-9NGBho-9NGYu8-9M2DUT-9NJKMw-98HNy3-iYsQzp-Hf8Hf-Hfbmv-Hf8J3-Hf8zA-Hfbwg-Hf8Cy-Hfbvx-6NAcR-HfbuB-kEbcaE"><img src="/images/tumblr_inline_pbyzrsU7611rp3p4d_540.jpg" alt="image" /></a></p>
+<p><a href="https://www.flickr.com/photos/120586634@N05/14673011704/in/photolist-omB2bq-omwzMe-4t8Crd-4t8APG-esLdLY-nNWAfN-dRjK7x-6Dk9yk-ebRBh1-is6X3r-6gP4A8-jsTyrY-7u2D76-2FafUE-8MneV3-9vQVHk-bcq3W-98EEMH-98HNDy-98HNBU-9NJybd-9NGKrb-9NEtYQ-9NAsCc-9NFVNX-8DrQeq-9M2DZZ-9NKJWL-9NDvLH-6ATnuz-9NGabs-2gFEdE-6WZToY-9NEwpU-9NGBho-9NGYu8-9M2DUT-9NJKMw-98HNy3-iYsQzp-Hf8Hf-Hfbmv-Hf8J3-Hf8zA-Hfbwg-Hf8Cy-Hfbvx-6NAcR-HfbuB-kEbcaE">Photo Gareth Halfacree</a>.</p>
+<p>As part of my work with the soon to be launched <a href="https://www.octoblu.com" title="Octoblu">Octoblu</a> I've been working on porting Firmata over to <a href="https://www.spark.io">Spark Core</a>. The Spark's arduino abstraction has really come along making it the cheapest connected arduino out there, and me pretty excited about it.</p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p>A firmata will allow us to command and control our sparks from all the existing firmata interfaces out there like Johnny 5 in Node or the many native interfaces. I should note Chris Williams has Voodoo Spark https://github.com/voodootikigod/voodoospark which is an RPC replacement for Firmata on Spark. From the Readme</p>
+<p>&quot;The VoodooSpark uses the Spark Cloud and its REST API to provide IP address and port information to the local spark core. It will then initiate a direct connection to the host machine, on which will need to be a TCP server. Once the connection has been made, the host machine can drive the Spark Core using the binary protocol defined below to effectively execute firmware API level commands dynamically.&quot;</p>
+<p>That being said not relying on the Spark server or requiring you to have a TCP Server seemed like enough to bring Firmata over. Plus Ive been able to do things like tunnel firmata through mqtt which would allow Core sleep and store and forward messages that VoodoSpark currently couldnt achieve.</p>
+<p>UPDATE: Firmata has forked the project for the Spark and I'm developing in dev at https://github.com/firmata/spark#dev with production being at https://github.com/firmata/spark</p>
+<p>While a full working branch of octoblu (nea skynet) mqtt and core-firmware is over at
+https://github.com/jacobrosenthal/core-firmware/tree/skynet-mqtt-firmata</p>
+<p>The branch is working for minor interactions, but theres still a bit to be done.</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

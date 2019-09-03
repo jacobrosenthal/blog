@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Lasering PCB enclosures</h2>
+    	<div class="info">
+    		<span>1 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>27 March 2013</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p><img src="/images/tumblr_inline_pk17wqRMIP1rp3p4d_540.jpg" alt="image" /></p>
+<p>This week I used the laser to cut some holes in my enclosures to make way for switches, light pipes, etc. My previous attempts pre-hackerspace (with a dremel) were.. rough.</p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p><img src="/images/tumblr_inline_pk17wqGy4k1rp3p4d_540.jpg" alt="image" /></p>
+<p>There had to be a better way! The big problem with using the laser was jigging the case in the laser in such a way that I could reliably and repeatedly cut in the perfect spot. After a few attempts I found a solution.</p>
+<p><img src="/images/tumblr_inline_pk17wq7SDX1rp3p4d_540.png" alt="image" /></p>
+<p>First I exported my front board dimension and mill holes from Eagle using run -&gt; dxf.ulp, opened it in our laser program, mirrored it and adjusted some holes and sizes.</p>
+<p><img src="/images/tumblr_inline_pk17wrHN4u1rp3p4d_540.jpg" alt="image" /></p>
+<p>I grabbed a square piece of stock and dropped up the in the upper corner of the laser and homed the laser head. Now, by lasering that outline on my stock, I can take it out of the machine and put it back in the same place every time.</p>
+<p><img src="/images/tumblr_inline_pk17wr8WG41rp3p4d_540.jpg" alt="image" /></p>
+<p>I can also match the PCB up over the top of the etch.</p>
+<p><img src="/images/tumblr_inline_pk17wsUk3h1rp3p4d_540.jpg" alt="image" /></p>
+<p>And, finally, since the PCB is designed to fit the case perfectly, I can just drop the case on top of the PCB.</p>
+<p><img src="/images/tumblr_inline_pk17wsx6MI1rp3p4d_540.jpg" alt="image" /></p>
+<p>Wonderful. I could still use a method to cut cleaner on the other 4 sides, but for now Im happy doing a little bit of clean up work and having my cuts be entirely though the case.</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

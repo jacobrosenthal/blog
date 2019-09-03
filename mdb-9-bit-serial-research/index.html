@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>MDB - 9 bit serial research</h2>
+    	<div class="info">
+    		<span>0 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>18 October 2011</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>I've done some reasearch on arduino, atmel and 9 bit serial. Again my goal is to stay as much in the Open Source toolchain as possible so that I don't have to support any more than I have to, and so my result is as standardized as possible:</p>
+<ul>
+<li>The arduino serial can not handle 9 bit transactions. :(</li>
+<li>Atmel, however does support it. &quot;1 start bit • 5,6,7,8,or9databits • no, even or odd parity bit • 1or2stopbits&quot;</li>
+<li>Looking at the existing Atmel serial library it is sadly hardcoded to 8 bits.</li>
+<li>Theres a bitbang serial library for arduino called New Soft Serial. It does not do 9 bit either :(. It seems like it would be not too terribly difficult to alter that code though.</li>
+</ul>
+<p>So my options are</p>
+<ul>
+<li>a fresh atmel library, which arduino people wouldn't look at.</li>
+<li>A fresh arduino hardware or software serial implementation which I may be able to get upstreamed to them,</li>
+<li>altering the existing NSS product and attempting to get that upstreamed.</li>
+</ul>
+<p>For now I choose altering NSS as it will be the least path of resistance. Here goes nothing.</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

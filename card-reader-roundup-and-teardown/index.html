@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Card Reader Roundup and Teardown</h2>
+    	<div class="info">
+    		<span>3 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>25 March 2013</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>Recently for a client project I needed to read credit card data to an Arduino. It didn't seem like it would be too hard or expensive since square gives out readers by the handful for free. I was only mildly familiar with the technology so I turned to <a href="http://en.wikipedia.org/wiki/Magnetic_stripe_card">wikipedia</a> who told me the data is stored on Looks like track 1, format b.</p>
+<p>A quick search on Sparkfun for an existing solution found their offerings to be HUGE and expensive! We wanted to embed some solution in a phone size package. Why is square able to make them so small and give them out free? Thus began my journey to destroy every card reader out there.</p>
+<p><strong>SQUARE</strong></p>
+<p><img src="/images/tumblr_inline_pk03jeZmMr1rp3p4d_540.jpg" alt="image" /></p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p>First a little googling led to a <a href="http://www.northstreetlabs.org/squareup.html">teardown of the original square reader</a>. I still tore mine apart anyway and found the same thing they found. The reader is literally a tapehead positioned perfectly to hit track 1, nothing more! Not even an amp!  Basically they did as much in software as they possibly could. Good job!</p>
+<p>We wouldn't be using a phone jack in our solution and wouldn't have much processing power for cleaning the signal, but we spent some time trying to amp the signal and read the data. The signal was clearly evident and ampable, but our timeline didn't include reinventing card readers.</p>
+<p>Much later in my research I actually found an <a href="http://www.infoq.com/presentations/Android-Squared">amazing talk from the Square engineers which explains everything</a>. Its a must watch.</p>
+<p>In my research I found that Square had actually updated their model to add encryption. The update was touted for security, but I have trouble believing someone could man in the middle your headphone jack. A much more likely reason is using encryption to lock out the rise of the copycat mobile payment solutions like Intuit and Paypal. And of course to stop people like me from tracking down and repurposing handfuls of them.</p>
+<p><img src="/images/tumblr_inline_pk03jfxTv91rp3p4d_540.jpg" alt="image" /></p>
+<p>We surveyed our friends and found one of them in the wild to crack open. Sure enough theres now a coin cell battery and <a href="http://www.ti.com/product/msp430g2412">TI micro</a> in there and the signal is nonsense.</p>
+<p><strong>INTUIT</strong> (circle)</p>
+<p><img src="/images/tumblr_inline_pk03jfjAYO1rp3p4d_540.jpg" alt="image" /></p>
+<p>The first Intuit reader I took apart was THEIR v1 as well.</p>
+<p><img src="/images/tumblr_inline_pk03jfWZzR1rp3p4d_540.jpg" alt="image" /></p>
+<p>It used a e42407bj from Magchip and a f1936 from Microchip that seemed to either be for encryption. Some digging from my partner Tim turned up a similar part at <a href="http://www.idtechproducts.com/products/component-accessories.html">IDTech</a> that was very close to what we had which showed it actually output serial! Clearly they were simply in a rush to get to market and repurposed some existing silicon. Pricey for them, good for us.</p>
+<p>I tried to locate more readers for cheap, but they were on their v2 now.</p>
+<p><img src="/images/tumblr_inline_pk03jgsrpj1rp3p4d_540.jpg" alt="image" /></p>
+<p>When I finally tracked one down and tore it apart they'd transitioned off the Magchip chip for a custom solution with encryption :(</p>
+<p><img src="/images/tumblr_inline_pk03jgAfQL1rp3p4d_540.jpg" alt="image" /></p>
+<p><img src="/images/tumblr_inline_pk03jhn3ft1rp3p4d_540.jpg" alt="image" /></p>
+<p>So close!!!</p>
+<p><strong>The PAYPAL</strong>  (triangle)</p>
+<p><img src="/images/tumblr_inline_pk03jh8hf41rp3p4d_540.jpg" alt="image" /></p>
+<p>The Triangle is the most beautiful device of the bunch. The front cover is actually removable -- presumably for rebranding? The case, however, is impossible to get open. You can see my hacksaw damage in the photo above.</p>
+<p><img src="/images/tumblr_inline_pk03jhxnRu1rp3p4d_540.jpg" alt="image" /></p>
+<p><img src="/images/tumblr_inline_pk03ji3qH81rp3p4d_540.jpg" alt="image" /></p>
+<p>Inside it looks a lot like these other second gen readers though with a ton more passive components. We've got a <a href="http://www.mouser.com/ProductDetail/STMicroelectronics/STM8L151G6U6/?qs=RF4ygd%252bc9Xo71aXlmpKrVg==">8L151G ST Micro</a> and an <a href="http://ww1.microchip.com/downloads/cn/DeviceDoc/cn544548.pdf">op amp package 6l04ste from Microchip</a>. Presumably reading the signal and encrypting it for their app.</p>
+<p>Again it makes this device not at all hackable and shows nobody going into this business at this point is going to leave their devices open any more.</p>
+<p><strong>MAGTEK</strong></p>
+<p>At this point Tim just looked up magchip readers and we found another company called Magtek. It turns out they actually have a <a href="http://www.magtek.com/V2/products/secure-card-reader-authenticators/43mm.asp">fully implemented chip and tape head solution that outputs RS232</a>. They're something like $15-25 in low qty which meant if we were doing anything other than a functional prototype they'd be no good, but they would fit our custom solution just fine. We were able to successfully implement the Magtek solution with no real problems and were very happy with the responsiveness. Sadly I didn't write the code, so if you want to see it please hassle <a href="http://timgerrits.com/">Tim</a> into posting the code he wrote so you can benefit from our work too!</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

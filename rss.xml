@@ -1,0 +1,744 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Citizen Gadget</title>
+        <link>https://citizengadget.com</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://citizengadget.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Thu, 23 Nov 2017 04:07:07 +0000</lastBuildDate>
+        
+            <item>
+                <title>Paying China to reverse engineer for you</title>
+                <pubDate>Thu, 23 Nov 2017 04:07:07 +0000</pubDate>
+                <link>https://citizengadget.com/paying-china-to-reverse-engineer-for-you/</link>
+                <guid>https://citizengadget.com/paying-china-to-reverse-engineer-for-you/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1w3tj2wSz1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;In 2016 while visiting Shenzhen factories for a client, I wanted to hunt the markets for my favorite toys, dumb wearables, in order to learn from the design and see what parts are common and cheap. I bought everything I could until I found these veryfit id101′s I liked.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Hackaday Superconference Badge Hacking</title>
+                <pubDate>Wed, 15 Nov 2017 21:43:17 +0000</pubDate>
+                <link>https://citizengadget.com/hackaday-superconference-badge-hacking/</link>
+                <guid>https://citizengadget.com/hackaday-superconference-badge-hacking/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1w3efvbbV1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;At the &lt;a href=&quot;http:&#x2f;&#x2f;hackaday.io&quot;&gt;Hackaday&lt;&#x2f;a&gt; &lt;a href=&quot;https:&#x2f;&#x2f;hackaday.io&#x2f;superconference&#x2f;&quot;&gt;Superconference&lt;&#x2f;a&gt; this year &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;phated&quot;&gt;Blaine&lt;&#x2f;a&gt; and I finally decided to try our hand at a conference badge puzzle. The cambadge was &lt;a href=&quot;https:&#x2f;&#x2f;hackaday.com&#x2f;2017&#x2f;10&#x2f;11&#x2f;building-the-hackaday-superconference-badge&#x2f;&quot;&gt;introduced&lt;&#x2f;a&gt; a month before the conference with the &lt;a href=&quot;https:&#x2f;&#x2f;hackaday.com&#x2f;2017&#x2f;10&#x2f;11&#x2f;building-the-hackaday-superconference-badge&#x2f;&quot;&gt;source code&lt;&#x2f;a&gt; following shortly after so you you could prepare hack ideas and even start prototyping shields and addons. In their words:&lt;&#x2f;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s a camera. It has games, and it’s designed by [Mike Harrison] of Mike’s Electric Stuff. He designed and prototyped this badge in a single weekend. On board is a PIC32 microcontroller, an OV9650 camera module, and a bright, crisp 128×128 resolution color OLED display.&lt;&#x2f;p&gt;
+&lt;&#x2f;blockquote&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Kicad to Advanced Circuits for PCBs and Assembly</title>
+                <pubDate>Mon, 22 Feb 2016 22:56:16 +0000</pubDate>
+                <link>https://citizengadget.com/kicad-to-advanced-circuits-for-pcbs-and-assembly/</link>
+                <guid>https://citizengadget.com/kicad-to-advanced-circuits-for-pcbs-and-assembly/</guid>
+                <description>&lt;p&gt;Advanced circuits is a very high quality United States board house. They have a cheapish PCB service called &lt;a href=&quot;http:&#x2f;&#x2f;www.4pcb.com&#x2f;33-each-pcbs&#x2f;&quot;&gt;33each&lt;&#x2f;a&gt; for small runs, though it generally doesn&#x27;t compete with &lt;a href=&quot;https:&#x2f;&#x2f;oshpark.com&#x2f;&quot;&gt;OSHPark&lt;&#x2f;a&gt; if you ask me. Its only when you&#x27;re doing a bunch of boards (~20-50) that they really shine. And, if you&#x27;re doing boards through them, they offer assembly as well at frankly competitive prices to the DIY alternative &lt;a href=&quot;http:&#x2f;&#x2f;www.smallbatchassembly.com&#x2f;&quot;&gt;Small Batch Assembly&lt;&#x2f;a&gt;.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Sublime Build System for Arduino</title>
+                <pubDate>Thu, 18 Jun 2015 00:41:33 +0000</pubDate>
+                <link>https://citizengadget.com/sublime-build-system-for-arduino/</link>
+                <guid>https://citizengadget.com/sublime-build-system-for-arduino/</guid>
+                <description>&lt;p&gt;You might have used ino and stino for Arduino builds within in sublime, but ino has been very poorly supported for some time now.&lt;&#x2f;p&gt;
+&lt;p&gt;Ive Previously used the recently released Arduino CLI for &lt;a href=&quot;http:&#x2f;&#x2f;citizengadget.com&#x2f;post&#x2f;115195131742&#x2f;automated-build-testing-for-arduino-libraries&quot;&gt;automated testing&lt;&#x2f;a&gt; so I decided to hack those features into a proper sublime build system. The result is &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;jacobrosenthal&#x2f;arduino-cli&quot;&gt;arduino-cli, a complete stino replacement.&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;You&#x27;re required to have Arduino installed, and Its only OSX right now, but allows you to build and program your Arduino’s with just a Ctrl-B.&lt;&#x2f;p&gt;
+&lt;p&gt;Find it in your nearest Package Control today.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Parallax IDE for Chrome</title>
+                <pubDate>Fri, 01 May 2015 07:00:00 +0000</pubDate>
+                <link>https://citizengadget.com/parallax-ide-for-chrome/</link>
+                <guid>https://citizengadget.com/parallax-ide-for-chrome/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p43zzfWTJy1rp3p4d_540.jpg&quot; alt=&quot;&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;Im excited to announce that &lt;a href=&quot;https:&#x2f;&#x2f;www.iceddev.com&quot;&gt;Iced Dev&lt;&#x2f;a&gt; and myself shipped a product I&#x27;ve been consulting on over the past few months, the &lt;a href=&quot;https:&#x2f;&#x2f;www.parallax.com&#x2f;news&#x2f;2015-04-07&#x2f;basic-stamp-chrome-programming-tool-proves-itself-educational-customers-will-soon&quot;&gt;Parallax IDE for Chrome&lt;&#x2f;a&gt;. This allows teachers in schools around the world to continue their Parallax Basic Stamp curriculim in a world of Chromebooks.&lt;&#x2f;p&gt;
+&lt;p&gt;Parallax has a history of open source all the way &lt;a href=&quot;https:&#x2f;&#x2f;www.parallax.com&#x2f;microcontrollers&#x2f;propeller-1-open-source&quot;&gt;down to their silicon&lt;&#x2f;a&gt; so it was a no brainer to work on this project with them and release it all on &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;parallaxinc&#x2f;Parallax-IDE&quot;&gt;their github&lt;&#x2f;a&gt;.&lt;&#x2f;p&gt;
+&lt;p&gt;For my part I was able to make some upstream fixes to serial apis and develop a pure js basic stamp bootloader allowing Basic Stamp programming from both node and the browser. I also got to play with emscripten to package their C &#x27;compiler&#x27; for an end to end browser experience. I&#x27;m really proud of the Iced Dev team and Parallax so check it out in the &lt;a href=&quot;https:&#x2f;&#x2f;chrome.google.com&#x2f;webstore&#x2f;detail&#x2f;parallax-ide&#x2f;djbdelcnligmaaddjeenddjodmiaoffo?hl=en&quot;&gt;app store now&lt;&#x2f;a&gt;.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Automated Build Testing for Arduino Libraries</title>
+                <pubDate>Wed, 01 Apr 2015 07:58:59 +0000</pubDate>
+                <link>https://citizengadget.com/automated-build-testing-for-arduino-libraries/</link>
+                <guid>https://citizengadget.com/automated-build-testing-for-arduino-libraries/</guid>
+                <description>&lt;p&gt;So much can go wrong between your code and the Arduino in the real world. Its vital to keep removing the possible errors in this chain. The lowest hanging fruit we&#x27;re missing in the Arduino community is testing. We should really be &lt;a href=&quot;https:&#x2f;&#x2f;en.wikipedia.org&#x2f;wiki&#x2f;Unit_testing&quot;&gt;unit testing&lt;&#x2f;a&gt; our code logic to see that it does exactly what we think it does, but until that day we can do something even simpler. We can test that our code actually builds!&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>No more Arduino IDE - Program your Arduino from Node or Chrome</title>
+                <pubDate>Mon, 24 Nov 2014 06:14:13 +0000</pubDate>
+                <link>https://citizengadget.com/no-more-arduino-ide-program-your-arduino-from/</link>
+                <guid>https://citizengadget.com/no-more-arduino-ide-program-your-arduino-from/</guid>
+                <description>&lt;p&gt;Today I built an &lt;a href=&quot;https:&#x2f;&#x2f;www.npmjs.org&#x2f;package&#x2f;stk500&quot;&gt;stk500v1 programmer in pure javascript&lt;&#x2f;a&gt; freeing javascript folks from ever having to use the Arduino IDE (or avrdude) again. Instead:&lt;&#x2f;p&gt;
+&lt;p&gt;npm install stk500
+node uno.js&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>My #hardwareworkshop SF 2014 Notes</title>
+                <pubDate>Sun, 14 Sep 2014 06:26:00 +0000</pubDate>
+                <link>https://citizengadget.com/my-hardwareworkshop-sf-2014-notes/</link>
+                <guid>https://citizengadget.com/my-hardwareworkshop-sf-2014-notes/</guid>
+                <description>&lt;p&gt;I was lucky enough to attend &lt;a href=&quot;https:&#x2f;&#x2f;twitter.com&#x2f;marcbarros&quot;&gt;@marcbarros&lt;&#x2f;a&gt;&#x27;s &lt;a href=&quot;https:&#x2f;&#x2f;citizengadget.com&#x2f;my-hardwareworkshop-sf-2014-notes&#x2f;hardwareworkshop.com&quot;&gt;Hardware Workshop &lt;&#x2f;a&gt;SF 2014. I can&#x27;t say enough how valuable the content was, how giving all the advisors were, and how excellent all our peers are.  If you&#x27;re a first time founder you need to get to one of these. In the mean time, check out my notes (ripped from twitter with links intact) from my #hardwareworkshop tweets over the 2 day period.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Lightblue BeanBot</title>
+                <pubDate>Thu, 11 Sep 2014 00:22:00 +0000</pubDate>
+                <link>https://citizengadget.com/lightblue-beanbot/</link>
+                <guid>https://citizengadget.com/lightblue-beanbot/</guid>
+                <description>&lt;p&gt;You&#x27;ve Probably seen &lt;a href=&quot;https:&#x2f;&#x2f;www.youtube.com&#x2f;watch?v=xK54Bu9HFRw#t=19&quot;&gt;kilobot swarm videos&lt;&#x2f;a&gt; going around.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;a href=&quot;tiwtter.com&#x2f;monteslu&quot;&gt;Luis&lt;&#x2f;a&gt; wanted something fun to do with his &lt;a href=&quot;http:&#x2f;&#x2f;punchthrough.com&#x2f;bean&#x2f;&quot;&gt;LightBlue Bean&lt;&#x2f;a&gt; so I set to turn my bean into a remote controlled swarm style bot.&lt;&#x2f;p&gt;
+&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe
+        src=&quot;https:&#x2f;&#x2f;www.youtube.com&#x2f;embed&#x2f;i1pIDjbR6YY&quot;
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen&gt;
+    &lt;&#x2f;iframe&gt;
+&lt;&#x2f;div&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Firmata on LightBlue Bean</title>
+                <pubDate>Sun, 31 Aug 2014 02:55:00 +0000</pubDate>
+                <link>https://citizengadget.com/firmata-on-lightblue-bean/</link>
+                <guid>https://citizengadget.com/firmata-on-lightblue-bean/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_pbyzrshEbi1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;Another day, another Firmata fork. I spent the last few days messing around with getting Firmata working on the &lt;a href=&quot;http:&#x2f;&#x2f;punchthrough.com&#x2f;bean&#x2f;&quot;&gt;LightBlue BLE Bean&lt;&#x2f;a&gt;. I had previously written the &lt;a href=&quot;https:&#x2f;&#x2f;www.npmjs.org&#x2f;package&#x2f;ble-bean&quot;&gt;Node NPM package for the Bean&lt;&#x2f;a&gt; as an exercise to get to know both Node and the Bean. Why not give it full Firmata control?&lt;&#x2f;p&gt;
+&lt;p&gt;You need firmata on your bean from &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;jacobrosenthal&#x2f;arduino&#x2f;blob&#x2f;bean&#x2f;examples&#x2f;StandardFirmata&#x2f;StandardFirmata.ino&quot;&gt;my clone&lt;&#x2f;a&gt; and &lt;a href=&quot;https:&#x2f;&#x2f;twitter.com&#x2f;monteslu&quot;&gt;@monteslu&lt;&#x2f;a&gt; has put together a &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;monteslu&#x2f;bean-serial&#x2f;tree&#x2f;master&#x2f;examples&#x2f;firmata&quot;&gt;node example turning my bean package into a serial port and hooking it to firmata.js!&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Firmata on Spark Core</title>
+                <pubDate>Sun, 31 Aug 2014 02:42:00 +0000</pubDate>
+                <link>https://citizengadget.com/firmata-on-spark-core/</link>
+                <guid>https://citizengadget.com/firmata-on-spark-core/</guid>
+                <description>&lt;p&gt;&lt;a href=&quot;https:&#x2f;&#x2f;www.flickr.com&#x2f;photos&#x2f;120586634@N05&#x2f;14673011704&#x2f;in&#x2f;photolist-omB2bq-omwzMe-4t8Crd-4t8APG-esLdLY-nNWAfN-dRjK7x-6Dk9yk-ebRBh1-is6X3r-6gP4A8-jsTyrY-7u2D76-2FafUE-8MneV3-9vQVHk-bcq3W-98EEMH-98HNDy-98HNBU-9NJybd-9NGKrb-9NEtYQ-9NAsCc-9NFVNX-8DrQeq-9M2DZZ-9NKJWL-9NDvLH-6ATnuz-9NGabs-2gFEdE-6WZToY-9NEwpU-9NGBho-9NGYu8-9M2DUT-9NJKMw-98HNy3-iYsQzp-Hf8Hf-Hfbmv-Hf8J3-Hf8zA-Hfbwg-Hf8Cy-Hfbvx-6NAcR-HfbuB-kEbcaE&quot;&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_pbyzrsU7611rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2f;&#x2f;www.flickr.com&#x2f;photos&#x2f;120586634@N05&#x2f;14673011704&#x2f;in&#x2f;photolist-omB2bq-omwzMe-4t8Crd-4t8APG-esLdLY-nNWAfN-dRjK7x-6Dk9yk-ebRBh1-is6X3r-6gP4A8-jsTyrY-7u2D76-2FafUE-8MneV3-9vQVHk-bcq3W-98EEMH-98HNDy-98HNBU-9NJybd-9NGKrb-9NEtYQ-9NAsCc-9NFVNX-8DrQeq-9M2DZZ-9NKJWL-9NDvLH-6ATnuz-9NGabs-2gFEdE-6WZToY-9NEwpU-9NGBho-9NGYu8-9M2DUT-9NJKMw-98HNy3-iYsQzp-Hf8Hf-Hfbmv-Hf8J3-Hf8zA-Hfbwg-Hf8Cy-Hfbvx-6NAcR-HfbuB-kEbcaE&quot;&gt;Photo Gareth Halfacree&lt;&#x2f;a&gt;.&lt;&#x2f;p&gt;
+&lt;p&gt;As part of my work with the soon to be launched &lt;a href=&quot;https:&#x2f;&#x2f;www.octoblu.com&quot; title=&quot;Octoblu&quot;&gt;Octoblu&lt;&#x2f;a&gt; I&#x27;ve been working on porting Firmata over to &lt;a href=&quot;https:&#x2f;&#x2f;www.spark.io&quot;&gt;Spark Core&lt;&#x2f;a&gt;. The Spark&#x27;s arduino abstraction has really come along making it the cheapest connected arduino out there, and me pretty excited about it.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>THE SPARK GAP PODCAST - EPISODE 8</title>
+                <pubDate>Wed, 06 Aug 2014 07:00:00 +0000</pubDate>
+                <link>https://citizengadget.com/the-spark-gap-podcast-episode-8/</link>
+                <guid>https://citizengadget.com/the-spark-gap-podcast-episode-8/</guid>
+                <description>&lt;p&gt;I recently appeared on my buddy Karl’s new podcast, &lt;a href=&quot;http:&#x2f;&#x2f;thesparkgap.net&#x2f;the-spark-gap-podcast-episode-8&#x2f;&quot;&gt;Spark Gap Podcast Episode 8&lt;&#x2f;a&gt; this week to talk about &amp;quot;iot&amp;quot;. Join us, won’t you?&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Advanced Pinoccio</title>
+                <pubDate>Wed, 23 Apr 2014 09:43:00 +0000</pubDate>
+                <link>https://citizengadget.com/advanced-pinoccio/</link>
+                <guid>https://citizengadget.com/advanced-pinoccio/</guid>
+                <description>&lt;p&gt;In doing some work recently I had the pleasure of obtaining a bunch of new &lt;a href=&quot;http:&#x2f;&#x2f;www.pinocc.io&quot;&gt;http:&#x2f;&#x2f;www.pinocc.io&lt;&#x2f;a&gt; scouts -- Internet of Things Arduinos! The Lead Scout has wifi and talks to the other scouts nearby via mesh networking (non compliant Zigbee sadly). After playing around a bit I came to the conclusion that I liked the hardware. As opposed to the Spark, these are truly Arduinos. In addition to a nice webshell (via bitlash) and set of API&#x27;s you can write code as you normally would right within in the Arduino IDE. This is in stark contrast to the &lt;a href=&quot;https:&#x2f;&#x2f;citizengadget.com&#x2f;advanced-pinoccio&#x2f;spark.io&quot;&gt;Spark&lt;&#x2f;a&gt; which emulates Arduino from an as yet unfinished web IDE where libraries are largely not yet ready. It&#x27;s worth noting that I think the Spark is my long term bet, but in the short term our hackerspace has been lousy with the Spark and nobody&#x27;s doing anything with them. That said I found the prototyping shield not enough room to play in. I wanted a full development environment so I set out to create one.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;strong&gt;How to run Pinoccio in Atmel Studio 6.2 (IE for simulating and step by step debugging):&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>iFirmata now in the App Store</title>
+                <pubDate>Wed, 29 Jan 2014 06:43:00 +0000</pubDate>
+                <link>https://citizengadget.com/ifirmata-now-in-the-app-store/</link>
+                <guid>https://citizengadget.com/ifirmata-now-in-the-app-store/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_pbyzrs64Xy1rp3p4d_540.png&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2f;&#x2f;ifirmata.github.io&#x2f;&quot;&gt;iFirmata&lt;&#x2f;a&gt; hit the Apple &lt;a href=&quot;https:&#x2f;&#x2f;itunes.apple.com&#x2f;us&#x2f;app&#x2f;ifirmata&#x2f;id795905884?ls=1&amp;amp;mt=8&quot;&gt;app store&lt;&#x2f;a&gt; today! iFirmata lets you connect to your Arduino to your idevice via a BLE connection (&lt;a href=&quot;http:&#x2f;&#x2f;www.seeedstudio.com&#x2f;depot&#x2f;Wearable-t-7.html?filter2=1&amp;amp;ref=top&quot;&gt;Xadow&lt;&#x2f;a&gt; or &lt;a href=&quot;http:&#x2f;&#x2f;redbearlab.com&#x2f;bleshield&#x2f;&quot;&gt;RedBear&lt;&#x2f;a&gt; currently) using the awesome open source &lt;a href=&quot;http:&#x2f;&#x2f;firmata.org&#x2f;&quot;&gt;Firmata&lt;&#x2f;a&gt; protocol.&lt;&#x2f;p&gt;
+&lt;p&gt;It lets you connect to your Arduino and do all the things you could normally do over the wire with Firmata including digital write a pin high or low, read analog values, set PWM or servos, send i2c commands to devices or trigger custom scripts using the send string function.&lt;&#x2f;p&gt;
+&lt;p&gt;Check out &lt;a href=&quot;https:&#x2f;&#x2f;www.youtube.com&#x2f;watch?v=Wv58Vw8H8tQ&quot;&gt;this hastily made video&lt;&#x2f;a&gt; that I had to do in order to get Apple to approve it.&lt;&#x2f;p&gt;
+&lt;p&gt;Of note, I put a $5 dollar price on it. Besides the months these side projects of mine are taking, dealing with the app submission is getting to be tiresome and my new resolution is to never put something in the store for free without a very good reason. If you know what Firmata is you&#x27;re probably interested and willing to throw me 5 bucks. If not its all up on &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;iFirmata&#x2f;iFirmata&quot;&gt;G&lt;&#x2f;a&gt;ithub so grab a copy and build your own. And when you&#x27;re done prototyping grab my source and make your own app. If you&#x27;re REALLY poor &lt;a href=&quot;http:&#x2f;&#x2f;jacobrosenthal.com&#x2f;contact.php&quot;&gt;contact me&lt;&#x2f;a&gt; for a promo code.&lt;&#x2f;p&gt;
+&lt;p&gt;Of note, you CAN get Firmata to connect over BLE on a Mac by using 10.8 or greater and pairing your BLE device which binds a tty. However, thats a bit hacky at least for application usage. My implementation should work on macOSX with very few changes but I haven&#x27;t gotten to it yet. Send me some pull requests to kick me in the butt.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Basic Eagle CAD workflow and gotchas from HeatSync Labs Hot Topics series</title>
+                <pubDate>Sun, 03 Nov 2013 19:50:02 +0000</pubDate>
+                <link>https://citizengadget.com/basic-eagle-cad-workflow-and-gotchas-from-heatsync/</link>
+                <guid>https://citizengadget.com/basic-eagle-cad-workflow-and-gotchas-from-heatsync/</guid>
+                <description>&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe
+        src=&quot;https:&#x2f;&#x2f;www.youtube.com&#x2f;embed&#x2f;FrxjNNv3wD4&quot;
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen&gt;
+    &lt;&#x2f;iframe&gt;
+&lt;&#x2f;div&gt;</description>
+            </item>
+        
+            <item>
+                <title>memoryIO now in App Store!</title>
+                <pubDate>Fri, 25 Oct 2013 22:05:16 +0000</pubDate>
+                <link>https://citizengadget.com/memoryio-now-in-app-store/</link>
+                <guid>https://citizengadget.com/memoryio-now-in-app-store/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_0ab8a681c08f7cf146a14e3f87023e60_208e95f1_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;My new MacOSX application memoryIO has been approved to the iTunes app store! memoryIO gives you a taste of lifelogging by saving a photo to your Photos directory every time you open your Mac. And its free! Check it out at http:&#x2f;&#x2f;www.memory.io&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Body Jewelry &#x2f; Wearable Electronics Adhesives Roundup</title>
+                <pubDate>Tue, 08 Oct 2013 22:08:00 +0000</pubDate>
+                <link>https://citizengadget.com/body-jewelry-wearable-electronics-adhesives/</link>
+                <guid>https://citizengadget.com/body-jewelry-wearable-electronics-adhesives/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_pbyzrs3IbP1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2f;&#x2f;colin-ho.com&#x2f;&quot;&gt;Colin&lt;&#x2f;a&gt; and I needed to find some way to attach wearable electronics to the body for body jewelry and wearable computing type applications. Eventually we hope piercing and other body modification technologies will allow us to do permanent attachment, but despite &lt;a href=&quot;http:&#x2f;&#x2f;hackaday.com&#x2f;2012&#x2f;05&#x2f;13&#x2f;hacking-magnets-into-your-skin&#x2f;&quot;&gt;recent articles on people using sub-dermal for the task&lt;&#x2f;a&gt;, they&#x27;re are WAY to prone to rejection to think about hanging things off of them. Sub-dermal magnets, too, come up short currently as they destroy the skin when paired with an external magnets&#x2f;ferrous objects.&lt;&#x2f;p&gt;
+&lt;p&gt;So what we needed was a double sided adhesive that stuck well to FR4 PCB boards, had a foam type carrier (ie it was thick) so some electronics could sit flush, and was something we handle and package reliably.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Toxicity, Inclusivity, and Community Size</title>
+                <pubDate>Thu, 03 Oct 2013 19:36:00 +0000</pubDate>
+                <link>https://citizengadget.com/toxicity-inclusivity-and-community-size/</link>
+                <guid>https://citizengadget.com/toxicity-inclusivity-and-community-size/</guid>
+                <description>&lt;p&gt;I&#x27;ve been struggling with the topic of toxic communication and poisonous people in our community spaces for years now. Only recently though have I been able to start collecting my thoughts and looking for answers. Today I saw that Openfly wrote an interesting article on hackerspaces.org titled &lt;a href=&quot;http:&#x2f;&#x2f;blog.hackerspaces.org&#x2f;2013&#x2f;09&#x2f;27&#x2f;redefining-hackerspaces&#x2f;&quot;&gt;&amp;quot;Redefining Hackerspaces&amp;quot;&lt;&#x2f;a&gt; which jived well with my scribblings. I don&#x27;t want to put words in his mouth so instead I&#x27;ll quote some of the conclusion:&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;We need to accept that trust networks don’t scale beyond a certain point. That trust is built on some commonality. That a community cannot be all things to all people.&amp;quot;&lt;&#x2f;em&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>LED Light Strip Hacked for Haptic Motors</title>
+                <pubDate>Tue, 27 Aug 2013 15:18:00 +0000</pubDate>
+                <link>https://citizengadget.com/led-light-strip-hacked-for-haptic-motors/</link>
+                <guid>https://citizengadget.com/led-light-strip-hacked-for-haptic-motors/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_pbyzrsBFEt1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;Last week I got to talk at about my most recent hack, a flexible haptic strip that easy for anyone to use, at &lt;a href=&quot;http:&#x2f;&#x2f;www.meetup.com&#x2f;hack-and-tell&#x2f;events&#x2f;133694432&#x2f;&quot;&gt;Hack N Tell Round 25&lt;&#x2f;a&gt; in NYC.&lt;&#x2f;p&gt;
+&lt;p&gt;In between working for ASU&#x27;s Cubic lab on a new &lt;a href=&quot;https:&#x2f;&#x2f;en.wikipedia.org&#x2f;wiki&#x2f;Haptics&quot;&gt;haptic&lt;&#x2f;a&gt; strip, I was pondering ways to bring haptics more to the forefront. Sure you can buy a &lt;a href=&quot;https:&#x2f;&#x2f;www.sparkfun.com&#x2f;products&#x2f;8449&quot;&gt;bare motor&lt;&#x2f;a&gt; or &lt;a href=&quot;https:&#x2f;&#x2f;www.sparkfun.com&#x2f;products&#x2f;11008&quot;&gt;lilypad motor&lt;&#x2f;a&gt; from Sparkfun or elsewhere, but in practice they&#x27;re a total pain to get working. You need a transistor and its a pain to mount them anywhere you&#x27;d want them -- Especially when motors are only really fun when you have a few of them to play with. And lets not even address the cost of say 10 of these modules!&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Lasering PCB enclosures</title>
+                <pubDate>Wed, 27 Mar 2013 19:56:37 +0000</pubDate>
+                <link>https://citizengadget.com/lasering-pcb-enclosures/</link>
+                <guid>https://citizengadget.com/lasering-pcb-enclosures/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_pk17wqRMIP1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;This week I used the laser to cut some holes in my enclosures to make way for switches, light pipes, etc. My previous attempts pre-hackerspace (with a dremel) were.. rough.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Pebble review</title>
+                <pubDate>Tue, 26 Mar 2013 23:49:00 +0000</pubDate>
+                <link>https://citizengadget.com/pebble-review/</link>
+                <guid>https://citizengadget.com/pebble-review/</guid>
+                <description>&lt;p&gt;Colin loaned me his Pebble until he gets back into town next month and I haven&#x27;t seen anyone else in our circle review it, so here goes.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;strong&gt;Who Needs the Time?&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;First some setup. I don&#x27;t wear watches and almost never have. Its a modality I think underutilized and one I&#x27;ve still intend to design for, but the truth is I haven&#x27;t found anything with enough value to wear on my wrist over the 31 years of my life.&lt;&#x2f;p&gt;
+&lt;p&gt;Thus I was incredibly surprised to find that after even ONE day of Pebble usage, I felt naked without it.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Card Reader Roundup and Teardown</title>
+                <pubDate>Mon, 25 Mar 2013 08:20:00 +0000</pubDate>
+                <link>https://citizengadget.com/card-reader-roundup-and-teardown/</link>
+                <guid>https://citizengadget.com/card-reader-roundup-and-teardown/</guid>
+                <description>&lt;p&gt;Recently for a client project I needed to read credit card data to an Arduino. It didn&#x27;t seem like it would be too hard or expensive since square gives out readers by the handful for free. I was only mildly familiar with the technology so I turned to &lt;a href=&quot;http:&#x2f;&#x2f;en.wikipedia.org&#x2f;wiki&#x2f;Magnetic_stripe_card&quot;&gt;wikipedia&lt;&#x2f;a&gt; who told me the data is stored on Looks like track 1, format b.&lt;&#x2f;p&gt;
+&lt;p&gt;A quick search on Sparkfun for an existing solution found their offerings to be HUGE and expensive! We wanted to embed some solution in a phone size package. Why is square able to make them so small and give them out free? Thus began my journey to destroy every card reader out there.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;strong&gt;SQUARE&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_pk03jeZmMr1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Live uploading from the GoPro Lifecam</title>
+                <pubDate>Wed, 23 Jan 2013 02:36:00 +0000</pubDate>
+                <link>https://citizengadget.com/live-uploading-from-the-gopro-lifecam/</link>
+                <guid>https://citizengadget.com/live-uploading-from-the-gopro-lifecam/</guid>
+                <description>&lt;p&gt;If you’ll remember from previous posts my wishlist was to upload thumbnails(which should be available in metadata) instead of full images, do that in descending order from time shot so that if we have an internet outage we don’t get behind, and probably do that in batches so we only use the wifi for some small amount of time out of lets say an hour.&lt;&#x2f;p&gt;
+&lt;p&gt;Over Christmas break &lt;a href=&quot;http:&#x2f;&#x2f;zgiles.github.com&#x2f;&quot;&gt;Zach Giles&lt;&#x2f;a&gt; brought down his Flu Card we’ve been wanting to play with. We were hoping this little Eye-Fi clone, running linux, would allow us to make smarter upload decisions allowing us to do live uploads from the GoPro.&lt;&#x2f;p&gt;
+&lt;p&gt;What we were able to do was exactly that and more—Check out Zach’s &lt;a href=&quot;http:&#x2f;&#x2f;zgiles.github.com&#x2f;&quot;&gt;first post&lt;&#x2f;a&gt; to see what and how we did.&lt;&#x2f;p&gt;
+&lt;p&gt;Now the bad news. The Flu Card doesn’t start the linux partition properly on the Go Pro 3 when in timelapse mode. Single shot seems to work ok, but thats not what our current technology is using. Timelapse works fine on the Hero2, but we get less than half battery life there and were expecting probably a 50% reduction in battery due to wireless meaning the only feasible place to do this is on the Hero3.&lt;&#x2f;p&gt;
+&lt;p&gt;More to be done.. Keep posted.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>New GoPro, case design and website!</title>
+                <pubDate>Sat, 08 Dec 2012 12:49:00 +0000</pubDate>
+                <link>https://citizengadget.com/new-gopro-case-design-and-website/</link>
+                <guid>https://citizengadget.com/new-gopro-case-design-and-website/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1w4kyD2iD1rp3p4d_540.jpg&quot; alt=&quot;&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;We picked up the Hero3 to test with our current mods. Our understanding is this is basically the Hero2 in new packaging, though about half as deep and with an advertised battery life claim of something like 8 hours! We put it to the test with our boards one photo a minute, and got 28 hours of battery life!  For reference I was getting ~18 hours on the Hero1 at one photo a minute. The only downfall of the new design is it uses a microsd card, which stops us from using the eyefi which is currently only sold in an SD format. A bunch of googling brought me to the &lt;a href=&quot;https:&#x2f;&#x2f;www.google.com&#x2f;search?q=KZ-B19-065&amp;amp;hl=en&amp;amp;tbo=d&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ei=LjbDUMnQNMHqqQH4wIDACw&amp;amp;ved=0CAcQ_AUoAA&amp;amp;biw=1052&amp;amp;bih=626&quot;&gt;KZ-B19-065&lt;&#x2f;a&gt;, an SD to MicroSD converter which I found for sale on ebay. Sadly, the Gopro either doesn&#x27;t love the added resistance of the traces, or it just doesnt settle into the slot the same as a typical SD card. Ive had it work for hours at a time and I&#x27;ve also had it crap out after one photo.&lt;&#x2f;p&gt;
+&lt;p&gt;The new camera allowed Colin to &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;Augmentous&#x2f;LifeLogger&#x2f;tree&#x2f;master&#x2f;CAD&quot;&gt;take another crack at the design&lt;&#x2f;a&gt; and put more than an hour into it this time. He also sourced some lanyard material and quick clasps so we have some nice custom lanyards! The result is gorgeous and Ive already gotten several compliments on it.&lt;&#x2f;p&gt;
+&lt;p&gt;Finally Zach did a bunch of work and we now have &lt;a href=&quot;http:&#x2f;&#x2f;jacob.livesinpublic.com&#x2f;&quot;&gt;a gallery site built&lt;&#x2f;a&gt;! As usual were &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;Augmentous&#x2f;LifeCam-Server&quot;&gt;sharing the code on github&lt;&#x2f;a&gt;. We bought the domain &lt;a href=&quot;https:&#x2f;&#x2f;citizengadget.com&#x2f;new-gopro-case-design-and-website&#x2f;livesinpublic.com&quot;&gt;livesinpublic.com&lt;&#x2f;a&gt; (big ups to &lt;a href=&quot;http:&#x2f;&#x2f;en.wikipedia.org&#x2f;wiki&#x2f;We_Live_in_Public&quot;&gt;We Live In Public&lt;&#x2f;a&gt;) and Zach is kindly hosting Colin&#x27;s photos (at &lt;a href=&quot;https:&#x2f;&#x2f;citizengadget.com&#x2f;new-gopro-case-design-and-website&#x2f;colin.livesinpublic.com&quot;&gt;colin.livesinpublic.com&lt;&#x2f;a&gt;) and my photos (at &lt;a href=&quot;https:&#x2f;&#x2f;citizengadget.com&#x2f;new-gopro-case-design-and-website&#x2f;jacob.livesinpublic.com&quot;&gt;jacob.livesinpublic.com&lt;&#x2f;a&gt;), as well as his own experiments in lifelogging (at &lt;a href=&quot;https:&#x2f;&#x2f;citizengadget.com&#x2f;new-gopro-case-design-and-website&#x2f;zrg.livesinpublic.com&quot;&gt;zrg.livesinpublic.com&lt;&#x2f;a&gt;).&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Geotagged GoPro photos via EyeFi</title>
+                <pubDate>Mon, 05 Nov 2012 03:22:13 +0000</pubDate>
+                <link>https://citizengadget.com/geotagged-gopro-photos-via-eyefi/</link>
+                <guid>https://citizengadget.com/geotagged-gopro-photos-via-eyefi/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1w45xDCbd1rp3p4d_540.png&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;TLDR;&lt;&#x2f;p&gt;
+&lt;p&gt;We now have geotagged photos and our uploads occur automatically at the end of the day via ftp! Thanks EyeFi!&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>LifeCam Videos</title>
+                <pubDate>Sat, 27 Oct 2012 17:56:05 +0000</pubDate>
+                <link>https://citizengadget.com/lifecam-videos/</link>
+                <guid>https://citizengadget.com/lifecam-videos/</guid>
+                <description>&lt;p&gt;I&#x27;ve been asked for stiched videos from the camera, so here are links to 3.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2f;&#x2f;www.flickr.com&#x2f;photos&#x2f;jacobrosenthal&#x2f;8127353037&#x2f;in&#x2f;photostream&#x2f;&quot;&gt;A day at HeatSync fixing the 3D Printer&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2f;&#x2f;www.flickr.com&#x2f;photos&#x2f;jacobrosenthal&#x2f;8127395148&#x2f;in&#x2f;photostream&#x2f;&quot;&gt;Me napping on the (purposely uncomfortable) NapSync Labs couch&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2f;&#x2f;www.flickr.com&#x2f;photos&#x2f;jacobrosenthal&#x2f;8127362441&#x2f;&quot;&gt;My Fast and Furious driving&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Turning GoPro into a lifelogging camera</title>
+                <pubDate>Wed, 17 Oct 2012 09:55:00 +0000</pubDate>
+                <link>https://citizengadget.com/turning-gopro-into-a-lifelogging-camera/</link>
+                <guid>https://citizengadget.com/turning-gopro-into-a-lifelogging-camera/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1w4ebdcsp1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;Recently my hetero life partner &lt;a href=&quot;http:&#x2f;&#x2f;colin-ho.com&#x2f;&quot;&gt;Colin Ho&lt;&#x2f;a&gt; and I turned a GoPro Hero into a lifelogger camera.  I&#x27;ve wanted to do life logging forever but never got my stuff together so when Colin brought in the camera in and made the challenge, I was in.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Recently some people at our hackerspace HeatSync Labs asked for me to update them on The State of Body Computing. This is a...</title>
+                <pubDate>Wed, 17 Oct 2012 09:40:07 +0000</pubDate>
+                <link>https://citizengadget.com/recently-some-people-at-our-hackerspace-heatsync/</link>
+                <guid>https://citizengadget.com/recently-some-people-at-our-hackerspace-heatsync/</guid>
+                <description>&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe
+        src=&quot;https:&#x2f;&#x2f;www.youtube.com&#x2f;embed&#x2f;RNx3AtNQ7Dg&quot;
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen&gt;
+    &lt;&#x2f;iframe&gt;
+&lt;&#x2f;div&gt;</description>
+            </item>
+        
+            <item>
+                <title>Goertzel Arduino Library</title>
+                <pubDate>Mon, 25 Jun 2012 19:15:02 +0000</pubDate>
+                <link>https://citizengadget.com/goertzel-arduino-library/</link>
+                <guid>https://citizengadget.com/goertzel-arduino-library/</guid>
+                <description>&lt;p&gt;For my ongoing Arduino watch project, we want to be able to do frequency detection in order to blink an led to bass hits.&lt;&#x2f;p&gt;
+&lt;p&gt;There are a few Fast Fourier Transforms that have been written on Arduino including &lt;a href=&quot;http:&#x2f;&#x2f;www.arduino.cc&#x2f;cgi-bin&#x2f;yabb2&#x2f;YaBB.pl?num=1286718155&quot;&gt;this one&lt;&#x2f;a&gt; and &lt;a href=&quot;http:&#x2f;&#x2f;elm-chan.org&#x2f;works&#x2f;akilcd&#x2f;report_e.html&quot;&gt;this one&lt;&#x2f;a&gt;. However, I needed my library to run on 8mhz clock along with whatever sampling rate change that would introduce. All the libraries I found were extremely optimized or poorly written with no abstraction so that I found it easier to start from scratch than attempt to use them.&lt;&#x2f;p&gt;
+&lt;p&gt;So I set about figuring out how to implement something myself. I quickly learned about something called the Goertzel algorithm for when you actually only need to find a single frequency, vs a whole range, allowing all the savings you would expect from that. I found a few generic implementations of that as well on &lt;a href=&quot;http:&#x2f;&#x2f;en.wikipedia.org&#x2f;wiki&#x2f;Goertzel_algorithm&quot;&gt;wikipedia&lt;&#x2f;a&gt; and &lt;a href=&quot;http:&#x2f;&#x2f;www.eetimes.com&#x2f;design&#x2f;embedded&#x2f;4024443&#x2f;The-Goertzel-Algorithm&quot;&gt;EEtimes&lt;&#x2f;a&gt; but nothing specifically for Arduino. I tried implementing the generalized version on wikipedia but had lots of trouble with datatypes and my ability to properly debug on Arduino hardware. The EE times implementation&#x27;s link was broken but some google-fu found it the &lt;a href=&quot;http:&#x2f;&#x2f;www.eetimes.com&#x2f;Content&#x2f;SourceCode&#x2f;09banks.txt&quot;&gt;demo code&lt;&#x2f;a&gt;. It was written in C that I could compile on my laptop and get sane results. Then I could move it to Arduino slowly while maintaining those sane results. With this method I was able to keep everything working as I transitioned the code to a full &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;jacobrosenthal&#x2f;Goertzel&quot;&gt;Goertzel Arduino library&lt;&#x2f;a&gt;.&lt;&#x2f;p&gt;
+&lt;p&gt;I&#x27;m looking for feedback on how it should be implemented. Should it do the sample, or work on your existing array of samples? Is there an easier way to expose N and target frequency, perhaps some calculation or default? Let me know!&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>I&#x27;m a circuit designer and have been 3D printing for years. I&#x27;ve come to the point now where I want to enclose my electronics to...</title>
+                <pubDate>Sun, 24 Jun 2012 16:55:00 +0000</pubDate>
+                <link>https://citizengadget.com/im-a-circuit-designer-and-have-been-3d-printing/</link>
+                <guid>https://citizengadget.com/im-a-circuit-designer-and-have-been-3d-printing/</guid>
+                <description>&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe
+        src=&quot;https:&#x2f;&#x2f;www.youtube.com&#x2f;embed&#x2f;72M6l-owuxg&quot;
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen&gt;
+    &lt;&#x2f;iframe&gt;
+&lt;&#x2f;div&gt;</description>
+            </item>
+        
+            <item>
+                <title>The Acrylic Magnate Turns One Year Old</title>
+                <pubDate>Mon, 11 Jun 2012 16:53:51 +0000</pubDate>
+                <link>https://citizengadget.com/the-acrylic-magnate-turns-one-year-old/</link>
+                <guid>https://citizengadget.com/the-acrylic-magnate-turns-one-year-old/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1w4o9jLTy1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;A year ago as an experiment in sales and in the in the ability for passion and ownership to drive responsibility in a community space, I set up a store inside @heatsynclabs to resell acrylic for our new laser cutter.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Interview: Mitch Altman&#x27;s Hacker Trip to China 2</title>
+                <pubDate>Wed, 16 May 2012 18:28:00 +0000</pubDate>
+                <link>https://citizengadget.com/interview-mitch-altmans-hacker-trip-to-china-2/</link>
+                <guid>https://citizengadget.com/interview-mitch-altmans-hacker-trip-to-china-2/</guid>
+                <description>&lt;p&gt;From April 3rd to May 3rd I visited China with Mitch Altman&#x27;s second, &lt;a href=&quot;https:&#x2f;&#x2f;www.noisebridge.net&#x2f;wiki&#x2f;NoisebridgeChinaTrip2&quot;&gt;hacker trip to China&lt;&#x2f;a&gt;. We visited five hackerspaces, two Maker Faires, Seeed Studios, factories and lots more! I asked Mitch a series of questions about how the trip came about, what he saw, his thoughts on traveling to a country with a poor human rights record, and what madness he&#x27;s up to next!&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;strong&gt;What is this China trip thing? Where did you go?&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Another white guy spends 30 days in China and thinks he knows things (or China Q&#x2f;A)</title>
+                <pubDate>Tue, 15 May 2012 03:47:00 +0000</pubDate>
+                <link>https://citizengadget.com/another-white-guy-spends-30-days-in-china-and/</link>
+                <guid>https://citizengadget.com/another-white-guy-spends-30-days-in-china-and/</guid>
+                <description>&lt;p&gt;I&#x27;ve been asked over and over again about my experiences in China during my &lt;a href=&quot;https:&#x2f;&#x2f;www.noisebridge.net&#x2f;wiki&#x2f;NoisebridgeChinaTrip2&quot;&gt;30 day trip&lt;&#x2f;a&gt; so I thought I&#x27;d round up some of the most asked questions and answer them here:&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;strong&gt;How do [those people] live under such repression?&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Replicator Reflections</title>
+                <pubDate>Mon, 07 May 2012 05:58:50 +0000</pubDate>
+                <link>https://citizengadget.com/replicator-reflections/</link>
+                <guid>https://citizengadget.com/replicator-reflections/</guid>
+                <description>&lt;p&gt;By now you should have noticed that Makerbot has &lt;a href=&quot;http:&#x2f;&#x2f;www.makerbot.com&#x2f;blog&#x2f;2012&#x2f;01&#x2f;09&#x2f;introducing-the-makerbot-replicator&#x2f;&quot;&gt;announced&lt;&#x2f;a&gt; their new 3D printer, th Replicator, and over the past few months has started shipping them. Further of note, the Thingomatic(TOM) is now End of Life(EOL) though Makerbot is &lt;a href=&quot;http:&#x2f;&#x2f;www.makerbot.com&#x2f;blog&#x2f;2012&#x2f;04&#x2f;17&#x2f;makerbot-thing-o-matics-where-we-are-now&#x2f;&quot;&gt;committed&lt;&#x2f;a&gt; to supporting existing owners.&lt;&#x2f;p&gt;
+&lt;p&gt;The major announcements on the Replicator design were dual MK7 nozzles, integrated interface kit, and a removal of the build platform. Sound familiar?&lt;&#x2f;p&gt;
+&lt;p&gt;The big difference nobody saw coming seems to be a move towards the z axis being on the platform now and the nozzle being on the x&#x2f;y, much like the Ultimaker. In the short term this will mean a slight speed increase as the platform won&#x27;t wobble the print all around during prints. In the long run though, theres such legacy weight in the design that I don&#x27;t see capability for massive speed increase without further improvements.&lt;&#x2f;p&gt;
+&lt;p&gt;We made some fun of the new design as simple a TOM turned upside down and got some &lt;a href=&quot;http:&#x2f;&#x2f;groups.google.com&#x2f;forum&#x2f;#!topic&#x2f;makerbot&#x2f;wG7uSO2Jcmc&quot;&gt;laughs on the forums&lt;&#x2f;a&gt;, but in all honesty these are all great improvements. There are shiny new linear bearings ,injection molded parts, laser cut parts, and custom machined parts--all indicating a more mature product and, in addition to the extras, is a big reason why they&#x27;ve had to increase the price to $1749 with one extruder, $1999 with dual extrusion.&lt;&#x2f;p&gt;
+&lt;p&gt;I got a chance to see one while in China at the &lt;a href=&quot;http:&#x2f;&#x2f;www.makercarnival.com&#x2f;&quot;&gt;Maker Carnival Beijing&lt;&#x2f;a&gt; Seeed Studios booth and it was printing smooth as you&#x27;d expect. The print quality wasn&#x27;t particularly superior to a TOM with MK7 nozzle, which isn&#x27;t really surprising. I think we won&#x27;t know how much better the machine is until we assemble, or rather disassemble one as they come assembled now. I think my hope, and Makerbot&#x27;s, is that these machines will need less maintenance, and when they do it won&#x27;t mean massive disassembly.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Back from China (and Hong Kong) and now on Tumblr.</title>
+                <pubDate>Mon, 07 May 2012 02:25:03 +0000</pubDate>
+                <link>https://citizengadget.com/back-from-china-and-hong-kong-and-now-on-tumblr/</link>
+                <guid>https://citizengadget.com/back-from-china-and-hong-kong-and-now-on-tumblr/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_m3ms1rSkCD1rvz64lo1_1280.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Festival of Creativity Desert Playground Recap</title>
+                <pubDate>Tue, 10 Apr 2012 07:00:00 +0000</pubDate>
+                <link>https://citizengadget.com/festival-of-creativity-desert-playground-recap/</link>
+                <guid>https://citizengadget.com/festival-of-creativity-desert-playground-recap/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p43v98yX0z1rp3p4d_540.jpg&quot; alt=&quot;&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;This past winter 2011 &lt;a href=&quot;http:&#x2f;&#x2f;doteki.com&#x2f;?page_id=96&quot;&gt;Tim Gerrits&lt;&#x2f;a&gt; and I were lucky to be invited to work with Boyd Branch, Daniel Roth and Southwest Scrap Exchange on a small arts center grant for &lt;a href=&quot;https:&#x2f;&#x2f;www.mesaartscenter.com&#x2f;spark&quot;&gt;Mesa Festival of Creativity 2012&lt;&#x2f;a&gt;. The grant concept was a &amp;quot;Desert Playground&amp;quot; which we ended up interpreting as a series of interactive cactuses utilizing Southwest Scrap Exchange creative reuse.&lt;&#x2f;p&gt;
+&lt;hr &#x2f;&gt;
+&lt;p&gt;We brainstormed several different cactus concepts (my favorite that didn&#x27;t make it was a tumbleweed style cactus via a &lt;a href=&quot;https:&#x2f;&#x2f;www.flickr.com&#x2f;photos&#x2f;hslphotosync&#x2f;6610769033&#x2f;&quot;&gt;hamster ball prototype&lt;&#x2f;a&gt; ) but I mainly worked on a motion sensitive pool noodle agave (above)&lt;&#x2f;p&gt;
+&lt;p&gt;The whole project was incredibly price sensitive and for a long time I couldn’t figure out how to afford enough motion sensors to enable interactivity in so many leaves. Tim Gerrits ended up inventing a very clever cheap motion switch based on a spring, copper tube and ball bearing.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p43wj0lp3u1rp3p4d_540.jpg&quot; alt=&quot;&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;With so much wiring I wanted clean consistent connections so I fabbed a mosfet driver screw shield to break out an Arduino Mega for its large amount GPIO. I brainstormed with Jasper a simple &lt;a href=&quot;https:&#x2f;&#x2f;github.com&#x2f;jacobrosenthal&#x2f;Agave&#x2f;blob&#x2f;master&#x2f;code&#x2f;agave_final.ino&quot;&gt;fall off algorithm that loaded a random number into an array upon motion, then just slowly shifted the bits off until the cactus eventually settled back to stillness&lt;&#x2f;a&gt;. We also added an attract mode so it would freak out if left alone too long.&lt;&#x2f;p&gt;
+&lt;p&gt;The Prickly Pear was the last to come together and became much more art the science.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p43w7k9MVb1rp3p4d_540.jpg&quot; alt=&quot;&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;We developed a concept of ‘flowers’ &lt;a href=&quot;https:&#x2f;&#x2f;vimeo.com&#x2f;49778644&quot;&gt;that would slowly ‘die out’ when plucked&lt;&#x2f;a&gt;. I wound coils and hid them in the agave paddles and wired them down to the same mosfet power shield we used in the Agave.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p43wlxhWDX1rp3p4d_540.jpg&quot; alt=&quot;&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;Then I wound another coil around 20oz plastic bottles ‘flowers’. I swapped out caps until I had decent coupling to transfer enough power to light up an led from ~6 inches away.&lt;&#x2f;p&gt;
+&lt;p&gt;Grant based art work is incredibly grueling and I gained a lot of appreciation for those hustling a livelihood or donating their time for work on stuff like this. Not to mention being humbled by trying to build something children can’t destroy over even just a three day period.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Makerbot&#x27;s &quot;big announcement&quot; due next week</title>
+                <pubDate>Fri, 06 Jan 2012 17:00:05 +0000</pubDate>
+                <link>https://citizengadget.com/makerbots-big-announcement-due-next-week/</link>
+                <guid>https://citizengadget.com/makerbots-big-announcement-due-next-week/</guid>
+                <description>&lt;p&gt;Makerbot &lt;a href=&quot;http:&#x2f;&#x2f;twitter.com&#x2f;makerbot&#x2f;status&#x2f;154328210992140288&quot;&gt;announced&lt;&#x2f;a&gt; on their twitter account this past tuesday that there was a &#x27;big announcement&#x27; coming at CES next week. It floated the hash tag #makerbotpredictions to spur discussion of what that might be during the leadup. Some on Twitter have postulated a whole new printer while others the announcement of a new 3d scanner. For my part I don&#x27;t think Makerbot is going to diversify into something like 3d scanning at the moment. The VC money they received means they will be focusing intently on scaling production and getting more Makerbots in more people&#x27;s hands. I also don&#x27;t think they can announce a whole new printer yet. Makerbot has probably a couple thousand existing orders that they can&#x27;t ship through January or so at least. Those customers could easily cancel orders if some really big news was announced. My prediction is another rev to the existing Makerbot design. I believe they see their main printer line as hardware in beta, constantly being upgraded. The obvious suspects will be an integrated interface kit, dual extruders, and or maybe a change to the underperforming automated build platform. Hold me to my words though, as we&#x27;ve only got a few days to wait!&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Print defects: Flashing</title>
+                <pubDate>Tue, 03 Jan 2012 17:40:06 +0000</pubDate>
+                <link>https://citizengadget.com/print-defects-flashing/</link>
+                <guid>https://citizengadget.com/print-defects-flashing/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1uzs0AMUC1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;em&gt;This is the first in a series on a series of guest posts from Prescott Ogden (@prescottogden) discussing print defects, why they occur and what to do about them.&lt;&#x2f;em&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;In the course of raftlessly printing dozens of &lt;a href=&quot;http:&#x2f;&#x2f;www.thingiverse.com&#x2f;thing:4893&quot;&gt;mrule&#x27;s Polyhedron Vertices&lt;&#x2f;a&gt;, I&#x27;ve encountered a print defect I&#x27;ve termed &amp;quot;flashing&amp;quot; after a similar defect in injection molded parts. This is a slight flaring at the base of a part, where it meets the print bed, as well as a finite reduction in the finished part, e.g. 12mm parts are 11.5mm, 50mm parts are 49.5mm.&lt;&#x2f;p&gt;
+&lt;p&gt;This is normally not a big deal, but the polyhedron vertices snap together near the base, so the flashing interferes with mating between parts. It can also cause problem if you need parts with a very specific height.&lt;&#x2f;p&gt;
+&lt;p&gt;As far as I can tell, this is because our Z axis offset is set too low. For good print cohesion, we make sure smear down the first few layers of plastic as hard as possible. This causes flexing in the axis, and that layer is shorter and therefore wider. On the next layer, the same thing happens, but there is less flexing, so flare is slightly less, until the flexing is constant. This gives rise to both the height reduction and the trianglar flaring at the base of the part.&lt;&#x2f;p&gt;
+&lt;p&gt;The simplest solution is to adjust the starting point up by the amount of the height reduction, however, we then lose the bed adhesion benefits of smearing the first layer, and raftless printing becomes impossible. In order to get correct, or at least workable geometry while maintaining the print bed adhesion, I&#x27;ve developed the following OpenSCAD script where example.stl is the stl you&#x27;re altering:&lt;&#x2f;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;file = &amp;quot;example.stl&amp;quot;;
+height_reduction = .8;
+chamfer_radius = 0.6;
+chamfer_height = 2.1;
+epsilon = 0.001;
+envelope_size = 1000;
+
+&#x2f;&#x2f;Chamfer
+
+difference() {
+    &#x2f;&#x2f;Height Boost
+    union(){
+        translate([0, 0, height_reduction])
+        import(file);
+        linear_extrude( height =height_reduction, center = false) projection(cut = true) import(file);
+    }
+
+    minkowski() {
+        difference() {
+            translate([0, 0, epsilon&#x2f;2])
+            cube(size=[envelope_size, envelope_size, epsilon], center = true);
+            linear_extrude( height = 2*epsilon, center = true) projection(cut = true) import(file);
+        }
+        cylinder(r1=chamfer_radius, h =chamfer_height, r2 = 0, center = false, $fn=10);
+    }
+}
+&lt;&#x2f;span&gt;&lt;&#x2f;pre&gt;
+&lt;p&gt;This code simply pads the bottom of the part, so the overall height will be correct, then chamfers it using a &lt;a href=&quot;http:&#x2f;&#x2f;www.cgal.org&#x2f;Manual&#x2f;latest&#x2f;doc_html&#x2f;cgal_manual&#x2f;Minkowski_sum_3&#x2f;Chapter_main.html&quot;&gt;minkowski sum,&lt;&#x2f;a&gt; so that when flashing occurs, it brings the part out to the desired perimeter, rather than beyond it.&lt;&#x2f;p&gt;
+&lt;p&gt;This hack is not ideal, it still distorts any features close to the bottom of the part. A better solution might be to modify or configure skeinforge to adjust the z-height and width over thickness on a per-layer basis, or more simply to put and extra height_reduction between the first and second layers. Despite it&#x27;s shortcomings, the chamfer approach solved my mating problems with the polyhedron vertices, and it&#x27;s a good first step.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Top 10 Makerbot&#x2f;Rep Rap Upgrades and Tips</title>
+                <pubDate>Tue, 13 Dec 2011 17:00:00 +0000</pubDate>
+                <link>https://citizengadget.com/top-10-makerbotrep-rap-upgrades-and-tips/</link>
+                <guid>https://citizengadget.com/top-10-makerbotrep-rap-upgrades-and-tips/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1uzp0X7de1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;We’ve been printing for 2 years now at &lt;a href=&quot;http:&#x2f;&#x2f;t.umblr.com&#x2f;redirect?z=http%3A%2F%2Fwww.heatsynclabs.org%2F&amp;amp;t=OWQ4ZDU0YTUwMDY3MTZlZTAxNWRjMjQ4MWQyNWYyNDA1MTllNGFiZixqS29zNW4zbg%3D%3D&amp;amp;b=t%3A6ASW4D1iO1hu7Y8voOwvJA&amp;amp;p=http%3A%2F%2Ffab.heatsynclabs.org%2Fpost%2F14167191640%2Ftop-10-makerbotrep-rap-upgrades-and-tips&amp;amp;m=1&quot;&gt;HeatSync&lt;&#x2f;a&gt; and I thought I’d put together some of my top tips for new printer owners. Some of them are hard won, others are from other bloggers in the Rep Rap&#x2f;Makerbot community over the years so as such I’ll take no credit for any of these innovations.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>3D printing night @heatsynclabs</title>
+                <pubDate>Wed, 23 Nov 2011 16:11:01 +0000</pubDate>
+                <link>https://citizengadget.com/3d-printing-night-heatsynclabs/</link>
+                <guid>https://citizengadget.com/3d-printing-night-heatsynclabs/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1v08qwP3l1rp3p4d_540.jpg&quot; alt=&quot;&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;We&#x27;re doing a ton of 3d printing at the lab right now with Moheeb&#x27;s Thingomatic and our Fakerbot. Moreso, Prescott and I are talking about a custom MK7 extruder for the Fakerbot, Moheeb and I are talking about reviving the Mendel with new Prusa parts, and Raymond and Corey are silently slaving away on their custom Ultimaker builds. Stop in!&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>I was invited to speak at UAT on the state of Additive Manufacturing!</title>
+                <pubDate>Sun, 20 Nov 2011 22:54:04 +0000</pubDate>
+                <link>https://citizengadget.com/i-was-invited-to-speak-at-uat-on-the-state-of/</link>
+                <guid>https://citizengadget.com/i-was-invited-to-speak-at-uat-on-the-state-of/</guid>
+                <description>&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe
+        src=&quot;https:&#x2f;&#x2f;www.youtube.com&#x2f;embed&#x2f;WJ02eSfGmMQ&quot;
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen&gt;
+    &lt;&#x2f;iframe&gt;
+&lt;&#x2f;div&gt;</description>
+            </item>
+        
+            <item>
+                <title>Body computing goes mainstream as Jawbone announces the Up</title>
+                <pubDate>Fri, 04 Nov 2011 00:39:00 +0000</pubDate>
+                <link>https://citizengadget.com/body-computing-goes-mainstream-as-jawbone/</link>
+                <guid>https://citizengadget.com/body-computing-goes-mainstream-as-jawbone/</guid>
+                <description>&lt;p&gt;Today, with the announcement of availability of the Up fitness band, I believe Jawbone has signaled their intent to become a strong competitor in the &lt;a href=&quot;http:&#x2f;&#x2f;quantifiedself.com&#x2f;&quot;&gt;Quantified Self&lt;&#x2f;a&gt; and body computing market.&lt;&#x2f;p&gt;
+&lt;p&gt;The Up, available Nov 6, will log body movement and, along with the already released iPhone app, allow you to track food intake and sleep patterns. It even includes a vibrating alert to wake you during the optimal sleep cycle! It end runs Apples notoriously stingy hardware certification by utilizing the headphone jack to transmit data to the app, not unlike the Square reader.&lt;&#x2f;p&gt;
+&lt;p&gt;We finally have the answer to the question &lt;a href=&quot;http:&#x2f;&#x2f;feedproxy.google.com&#x2f;%7Er&#x2f;Venturebeat&#x2f;%7E3&#x2f;HvCTvKTe1yY&quot;&gt;Venturebeat&lt;&#x2f;a&gt; asked in July question when Jawbone announced they raised a new round of funding totaling $70M, &amp;quot;Why Now?&amp;quot; Now because none of the other entrants in the Quantified Self market have the ecosystem, design sense and engineering ability to sell body computing to the masses like Jawbone does today.&lt;&#x2f;p&gt;
+&lt;p&gt;With the &lt;a href=&quot;http:&#x2f;&#x2f;www.pcmag.com&#x2f;article2&#x2f;0,2817,2375756,00.asp&quot;&gt;Era&#x27;s app platform and (still unreleased) API&lt;&#x2f;a&gt;), it&#x27;s ability to connect to multiple bluetooth devices, and this (displayless) bluetooth sensor, it is now clear Jawbone intends to release a suite of body computing products. Though the Up uses the clever headphone data transfer method, imagine the next set of devices released from them all wirelessly connected to their flagship headset line!&lt;&#x2f;p&gt;
+&lt;p&gt;That truly fulfills the promise of &lt;a href=&quot;http:&#x2f;&#x2f;en.wikipedia.org&#x2f;wiki&#x2f;Body_Area_Network&quot;&gt;body networks&lt;&#x2f;a&gt; we&#x27;ve been sold for more than a decade. I for one am incredibly excited to see what they have up their sleeves.&lt;&#x2f;p&gt;
+&lt;p&gt;Source &lt;a href=&quot;http:&#x2f;&#x2f;jawbone.com&#x2f;up&quot;&gt;Jawbone&lt;&#x2f;a&gt; via &lt;a href=&quot;http:&#x2f;&#x2f;www.theverge.com&#x2f;2011&#x2f;11&#x2f;3&#x2f;2533931&#x2f;jawbone-up-release-date-price&quot;&gt;Verge&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Altering New Soft Serial NSS for 9 bit- cans of open source worms</title>
+                <pubDate>Tue, 25 Oct 2011 00:41:00 +0000</pubDate>
+                <link>https://citizengadget.com/altering-new-soft-serial-nss-for-9-bit-cans-of/</link>
+                <guid>https://citizengadget.com/altering-new-soft-serial-nss-for-9-bit-cans-of/</guid>
+                <description>&lt;p&gt;It looked like I should just be able to alter newsoftserial.cpp and newsoftserial.h  to take a uint_16 instead of 8, and then just step over 9 bits instead of 8 and I should have a pretty simple solution for RX.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Whats next?</title>
+                <pubDate>Mon, 24 Oct 2011 07:00:00 +0000</pubDate>
+                <link>https://citizengadget.com/whats-next/</link>
+                <guid>https://citizengadget.com/whats-next/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1uzd63vpE1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;I&#x27;ve been torn on what 3d printing technology to look into next.  The Fakerbot has still been far too finicky and far too difficult for most of our users to use on a regular basis.&lt;&#x2f;p&gt;
+&lt;p&gt;I&#x27;ve personally moved away from the idea of the Rep Rap for now. I&#x27;ts a beautiful goal, but I&#x27;d rather spend the next 5 years actually 3d printing rather than figuring out how to replace all the precision parts and processes with cheap and ubiquitous not-terrible ones. Precision in precision out...&lt;&#x2f;p&gt;
+&lt;p&gt;A sexy underdog right now is the &lt;a href=&quot;http:&#x2f;&#x2f;blog.ultimaker.com&#x2f;&quot;&gt;Ultimaker&lt;&#x2f;a&gt; which has x and y movement on the print head and the z on the platform which, combined with some good firmware, are allowing them to do much larger and faster prints. It&#x27;s got some of the community of Rep Rap and Makerbot, but still the precision of laser cut and machined parts.&lt;&#x2f;p&gt;
+&lt;p&gt;Or we could move towards some of the more commercial machines like the impressive, but delicate, Z-corp that made our Theo Jansen Walker.  Those retail around 20k and the binder and powder are costly as well. You can&#x27;t deny the output though...&lt;&#x2f;p&gt;
+&lt;p&gt;Finally there&#x27;s the obvious answer, just stick with the Makerbot guys.  My philosophy has always been to stay where the public&#x27;s attention is, even if there are shortcomings. They won&#x27;t be behind for long given the amount of engineers they have working on the problem, both within and without. And, the only thing keeping the Fakerbot from being a thing-o-matic is the mk7 extruder and the larger build size.&lt;&#x2f;p&gt;
+&lt;p&gt;What say you guys? Where do we put our money next?&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Thingomatic Build @heatsynclabs</title>
+                <pubDate>Sun, 23 Oct 2011 21:05:00 +0000</pubDate>
+                <link>https://citizengadget.com/thingomatic-build-heatsynclabs/</link>
+                <guid>https://citizengadget.com/thingomatic-build-heatsynclabs/</guid>
+                <description>&lt;p&gt;@VirgilVox&#x27;s new Thing-o-Matic that arrived this weekend! It was a pretty easy build for him, except for the usual firmware programming issues (for the motherboard I just had a better timing touch, for the extruder we re-burned the bootloader and still couldn&#x27;t upload until we finally we disconnected the molex and not-ethernet and it took... shrug)&lt;&#x2f;p&gt;
+&lt;p&gt;The real annoyance was the mk7 build. Its their most recent creation, and the build instructions belay that. Theres 4 different positions you can assemble the bar mount and its incredibly difficult to understand which they actually want you to use. I built it one way and had to redo it later to make it fit the mounting bracket. Then @virgilvox reported having to rebuild it again after I left. Then the filament wouldn&#x27;t go through and we had to rebuild it again. Finally @VirgilVox wanted to argue about which side the filament pusher was supposed to be on so he rebuilt it. Not a great experience.&lt;&#x2f;p&gt;
+&lt;p&gt;After that we just had to tighten down the x and y belts and it was printing gorgeous &#x27;out of the box&#x27;. I have to say it was a definitively advanced experience compared to the Cupcake days.&lt;&#x2f;p&gt;
+&lt;p&gt;The real star of the show is certainly the new Mk7,though. Check out the resolution and z transition seam of the Mk7 and 1.75mm filament on the left and our custom Mk5 with 3mm filament on the right.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1uzb01Q1a1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Limit switches and homing</title>
+                <pubDate>Tue, 18 Oct 2011 20:43:00 +0000</pubDate>
+                <link>https://citizengadget.com/limit-switches-and-homing/</link>
+                <guid>https://citizengadget.com/limit-switches-and-homing/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1uz3cesIE1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;Today I developed custom brackets and installed into our Love-able Fakerbot the Gen4 mechanical endstops.&lt;&#x2f;p&gt;
+&lt;p&gt;When we ordered our Gen4 electronics from Makerbot they came with 3 endstops, though the cupcake wasn&#x27;t terribly suited for them out of the box.  I developed brackets to install 2 of the endstops but couldn&#x27;t find our third endstop.  Since this IS a hackerspace I went ahead and etched a board utilizing our laser cutter and laser transfer technique for the third and installed that as well.&lt;&#x2f;p&gt;
+&lt;p&gt;Fakerbot now acts almost entirely like a thing-o-matic by homing it&#x27;s x,y and z. No more heating plastic or using paper to align the z!&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>MDB - 9 bit serial research</title>
+                <pubDate>Tue, 18 Oct 2011 00:00:00 +0000</pubDate>
+                <link>https://citizengadget.com/mdb-9-bit-serial-research/</link>
+                <guid>https://citizengadget.com/mdb-9-bit-serial-research/</guid>
+                <description>&lt;p&gt;I&#x27;ve done some reasearch on arduino, atmel and 9 bit serial. Again my goal is to stay as much in the Open Source toolchain as possible so that I don&#x27;t have to support any more than I have to, and so my result is as standardized as possible:&lt;&#x2f;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The arduino serial can not handle 9 bit transactions. :(&lt;&#x2f;li&gt;
+&lt;li&gt;Atmel, however does support it. &amp;quot;1 start bit • 5,6,7,8,or9databits • no, even or odd parity bit • 1or2stopbits&amp;quot;&lt;&#x2f;li&gt;
+&lt;li&gt;Looking at the existing Atmel serial library it is sadly hardcoded to 8 bits.&lt;&#x2f;li&gt;
+&lt;li&gt;Theres a bitbang serial library for arduino called New Soft Serial. It does not do 9 bit either :(. It seems like it would be not too terribly difficult to alter that code though.&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;p&gt;So my options are&lt;&#x2f;p&gt;
+&lt;ul&gt;
+&lt;li&gt;a fresh atmel library, which arduino people wouldn&#x27;t look at.&lt;&#x2f;li&gt;
+&lt;li&gt;A fresh arduino hardware or software serial implementation which I may be able to get upstreamed to them,&lt;&#x2f;li&gt;
+&lt;li&gt;altering the existing NSS product and attempting to get that upstreamed.&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;p&gt;For now I choose altering NSS as it will be the least path of resistance. Here goes nothing.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>3D Printing Showcase</title>
+                <pubDate>Sat, 15 Oct 2011 20:45:00 +0000</pubDate>
+                <link>https://citizengadget.com/3d-printing-showcase/</link>
+                <guid>https://citizengadget.com/3d-printing-showcase/</guid>
+                <description>&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1uz7ny1qu1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;@intel_jim brought over a new set of 3d prints for our little &#x27;showcase&#x27; of 3d printing technologies. These are from the local print house &lt;a href=&quot;http:&#x2f;&#x2f;www.padtinc.com&#x2f;&quot; title=&quot;PADT&quot;&gt;PADT&lt;&#x2f;a&gt; and show off several prints mixing various rubbers and plastics in various configurations. My understanding is he got these by touring the facility. Is PADT our next HeatSync field trip?&lt;&#x2f;p&gt;
+&lt;p&gt;They join our Theo Jansen Walker from the Z-Corp inkjet binder process, the hand from the Solido LOM process, and our Rep Rap parts made on the Dimension Stratasys.&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2f;images&#x2f;tumblr_inline_p1uz810SZe1rp3p4d_540.jpg&quot; alt=&quot;image&quot; &#x2f;&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>The MDB Specification for lay people</title>
+                <pubDate>Sat, 08 Oct 2011 00:41:00 +0000</pubDate>
+                <link>https://citizengadget.com/the-mdb-specification-for-lay-people/</link>
+                <guid>https://citizengadget.com/the-mdb-specification-for-lay-people/</guid>
+                <description>&lt;p&gt;I&#x27;m mainly working off of the specifications document by the NAMA people located at &lt;a href=&quot;http:&#x2f;&#x2f;www.vending.org&#x2f;technology&#x2f;MDB_Version_4-1.pdf&quot;&gt;http:&#x2f;&#x2f;www.vending.org&#x2f;technology&#x2f;MDB_Version_4-1.pdf&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;Pinout:&lt;&#x2f;p&gt;
+&lt;p&gt;GRN 6 MCommon 3 NC
+RED 5 MTX 2 0DC BRN
+BLK 4 MRX 1 34DC WHT&lt;&#x2f;p&gt;
+&lt;p&gt;Serial Communications:&lt;&#x2f;p&gt;
+&lt;p&gt;9600&lt;&#x2f;p&gt;
+&lt;p&gt;1 start bit, 8 bits data, 1 mode bit, 1 check bit, 1 stop bit&lt;&#x2f;p&gt;
+&lt;p&gt;check bit&lt;&#x2f;p&gt;
+&lt;ul&gt;
+&lt;li&gt;drop carry byte, address+all data bytes.&lt;&#x2f;li&gt;
+&lt;li&gt;A checksum will not be performed on ACK, NAK, or RET bytes.&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;p&gt;mode bit-&lt;&#x2f;p&gt;
+&lt;ul&gt;
+&lt;li&gt;from vmc sets if byte is address&lt;&#x2f;li&gt;
+&lt;li&gt;from slave if last byte of data (or finished talking to master?)&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;p&gt;transmit nrz&lt;&#x2f;p&gt;
+&lt;p&gt;receive inverted&lt;&#x2f;p&gt;
+&lt;p&gt;Misc:&lt;&#x2f;p&gt;
+&lt;p&gt;&amp;quot;Each peripheral should be polled every 25-200 milliseconds. This can be done by&lt;&#x2f;p&gt;
+&lt;p&gt;the POLL command or any other appropriate command.&amp;quot;&lt;&#x2f;p&gt;
+&lt;p&gt;Mtx need to source 100ma in order to drive optos!&lt;&#x2f;p&gt;
+&lt;p&gt;Connectors:&lt;&#x2f;p&gt;
+&lt;p&gt;Vertical Header: Molex 39-28-1063 ~1.25 on digikey&lt;&#x2f;p&gt;
+&lt;p&gt;Right Angle Header: Molex 39-30-1060 ~1.25 on digikey&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Re-engineering vending electronics</title>
+                <pubDate>Sun, 02 Oct 2011 00:42:00 +0000</pubDate>
+                <link>https://citizengadget.com/re-engineering-vending-electronics/</link>
+                <guid>https://citizengadget.com/re-engineering-vending-electronics/</guid>
+                <description>&lt;p&gt;I&#x27;ve always been fascinating by vending machines.&lt;&#x2f;p&gt;
+&lt;p&gt;Theres something romantic about the defunct automats. I see their return in our future, especially as we move to a service based economy, and then look to take more cost out of that sector. I look to ubiqoutious technological countries like Korea or Japan with interest as their societies find hilarious and awesome uses for vending.&lt;&#x2f;p&gt;
+&lt;p&gt;And as the maker movement looks to understand the world around them, I see us dissecting all the &#x27;black boxes&#x27; of our society. Vending is one of those boxes and I think its time we opened it up.&lt;&#x2f;p&gt;
+&lt;p&gt;Finally, I&#x27;ve seen a need in collaborative spaces like hackerspaces to account and paying for goods.&lt;&#x2f;p&gt;
+&lt;p&gt;My goal is to create an arduino interface to modern vending standards, specifically MDB. I want to utilize as much as possible existing resources so as not to support more than I have to, and so as to fit within the arduino ecosystem as much as possible. Ideally this should lead to custom arduino vending machines of all shapes and sizes in every hackerspace in the world.&lt;&#x2f;p&gt;
+&lt;p&gt;Why mdb?&lt;&#x2f;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It hasn&#x27;t been done and open sourced yet&lt;&#x2f;li&gt;
+&lt;li&gt;Its a pain in the butt (see point 1)&lt;&#x2f;li&gt;
+&lt;li&gt;Still the industry standard&lt;&#x2f;li&gt;
+&lt;li&gt;All the old stuff runs it! Hackers like cheap old stuff&lt;&#x2f;li&gt;
+&lt;li&gt;Cctalk doesnt seem prevalent in the states.&lt;&#x2f;li&gt;
+&lt;li&gt;Pulse is easy and documented online (though I may support this too)&lt;&#x2f;li&gt;
+&lt;li&gt;I need MDB for the vending machine equipment I already support and spent hundreds on&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;p&gt;My Process will be:&lt;&#x2f;p&gt;
+&lt;ul&gt;
+&lt;li&gt;research the specifications doc-already taken a look at these and they don&#x27;t seem helpful&lt;&#x2f;li&gt;
+&lt;li&gt;get some gear to play with&lt;&#x2f;li&gt;
+&lt;li&gt;sniff the data lines (pics)&lt;&#x2f;li&gt;
+&lt;li&gt;figure out a way to talk to them (existing arduino libraries? or write my own?)&lt;&#x2f;li&gt;
+&lt;li&gt;test and sniff&lt;&#x2f;li&gt;
+&lt;li&gt;prototype the hardware&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;p&gt;I look forward to posting at each step!&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Fakerbot Lives</title>
+                <pubDate>Tue, 01 Mar 2011 07:00:00 +0000</pubDate>
+                <link>https://citizengadget.com/fakerbot-lives/</link>
+                <guid>https://citizengadget.com/fakerbot-lives/</guid>
+                <description>&lt;p&gt;[This post is from our &lt;a href=&quot;http:&#x2f;&#x2f;wiki.heatsynclabs.org&#x2f;wiki&#x2f;Fakerbot&quot;&gt;3dprinting wiki&lt;&#x2f;a&gt; and is being added here and backdated for completeness]&lt;&#x2f;p&gt;
+&lt;p&gt;The machine is called a FakerBot, because it&#x27;s not quite a MakerBot, but there is a direct lineage. Since we didn&#x27;t have access to a laser-cutter and we wanted to do it on the cheap, the frame was slightly redesigned by Corey so that it could be cut on a tablesaw from inch material. The tongue and groove construction was replaced with dado-cut slots. All holes were made with a 7&#x2f;8&amp;quot; forstner bit, this allows them to take a skate bearing (a paper shim is required) or anything else that we wanted through the use of adapter plates since we knew that mods were likely. Total cost of the enclosure was $13 for a sheet of 1&#x2f;4&amp;quot; (actually 5.2mm) Luan from Home Despot which provided enough material to make four FakerBots even though we only made one. A laser-cut frame would have cost about $200 form Makerbot, so we saved a lot here. The frame was finished with linseed oil and came out pretty nice. MakerBot specified precision shafting for the X&amp;amp;Y axis which is unnecessary for a low-tech motion control system like this one. Drill rod was substituted for all linear shafting at a total cost of about $3 which is another $20 or $30 reduction. Similarly, low-cost nylon bushings were substituted for the more expensive MakerBot spec&#x27;d parts. The X and Y stages on the MakerBot are pretty good aside from being too tall, however the Z-stage is a horrible design. It is overly complex, wobbly, prone to jamming, etc. A replacement z-stage was designed by Corey with the goal of making Z simple and reliable:&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;strong&gt;The following parts from the Makerbot design were removed:&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) Belt&lt;&#x2f;li&gt;
+&lt;li&gt;(8) Bearings&lt;&#x2f;li&gt;
+&lt;li&gt;(1) Driving Pulley&lt;&#x2f;li&gt;
+&lt;li&gt;(4) Driven Pulleys&lt;&#x2f;li&gt;
+&lt;li&gt;(2) Idler Pulleys&lt;&#x2f;li&gt;
+&lt;li&gt;(1) Platform&lt;&#x2f;li&gt;
+&lt;li&gt;(2) Extruder Mounts (Dragons)&lt;&#x2f;li&gt;
+&lt;li&gt;(4) All-thread Rods (leadscrews)&lt;&#x2f;li&gt;
+&lt;li&gt;(4) Driven nuts (leadnuts)&lt;&#x2f;li&gt;
+&lt;li&gt;assorted screws and hardware&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;p&gt;&lt;strong&gt;That giant steaming pile of hardware was replaced with:&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) 1&#x2f;4-20 Acme leadscrew&lt;&#x2f;li&gt;
+&lt;li&gt;(1) Antibacklash nut&lt;&#x2f;li&gt;
+&lt;li&gt;(1) shaft coupler&lt;&#x2f;li&gt;
+&lt;li&gt;(1) Cantilever arm (laser cut)&lt;&#x2f;li&gt;
+&lt;li&gt;(1) Linear rail&lt;&#x2f;li&gt;
+&lt;li&gt;(1) Truck for linear rail&lt;&#x2f;li&gt;
+&lt;&#x2f;ul&gt;
+&lt;p&gt;&lt;strong&gt;An overall reduction from (27) functional components down to (6) !&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;
+&lt;p&gt;If you count every nut and screw the reduction is far greater, but you get the idea. The new Z-stage is a big improvement and has eleminated all of the jamming and wobbling problems that we had previously. It also looks far better.&lt;&#x2f;p&gt;
+&lt;p&gt;The extruder is Corey&#x27;s design hosted at &lt;a href=&quot;http:&#x2f;&#x2f;www.thingiverse.com&#x2f;thing:4579&quot;&gt;http:&#x2f;&#x2f;www.thingiverse.com&#x2f;thing:4579&lt;&#x2f;a&gt;. It is a clean-sheet of paper design that sprang from the frustration of dealing with the shortcomings of other extruders. So far the CoreyStruder and its derivatives have been downloaded on Thingiverse over 250 times.&lt;&#x2f;p&gt;
+&lt;p&gt;The hot-end is Corey&#x27;s copy of the hot-end used on the UP! printer which he later discovered is actually a copy of Nophead&#x27;s design. It is very compact and works well. Nophead does awesome work, his blog is a must-read:&lt;&#x2f;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2f;&#x2f;hydraraptor.blogspot.com&#x2f;&quot;&gt;http:&#x2f;&#x2f;hydraraptor.blogspot.com&#x2f;&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>History of the world, part 1</title>
+                <pubDate>Thu, 28 Oct 2010 23:40:44 +0000</pubDate>
+                <link>https://citizengadget.com/history-of-the-world-part-1/</link>
+                <guid>https://citizengadget.com/history-of-the-world-part-1/</guid>
+                <description>&lt;p&gt;Around October of 2009 HeatSync began planning to build a 3d printer as one of our first community projects. We had just been incorporated and the Rep Rap Mendel had just been released. It was heady times.&lt;&#x2f;p&gt;
+&lt;p&gt;It is now a year later we&#x27;ve lost a lot of good men to this project.  This blog is dedicated to those brave souls.&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Bug labs just announced the future and I&#x27;m not sure anyone noticed</title>
+                <pubDate>Fri, 24 Sep 2010 00:40:00 +0000</pubDate>
+                <link>https://citizengadget.com/bug-labs-just-announced-the-future-and-im-not/</link>
+                <guid>https://citizengadget.com/bug-labs-just-announced-the-future-and-im-not/</guid>
+                <description>&lt;p&gt;&lt;a href=&quot;http:&#x2f;&#x2f;news.vzw.com&#x2f;news&#x2f;2007&#x2f;11&#x2f;pr2007-11-27.html&quot;&gt;Several years ago &lt;&#x2f;a&gt;Verizon announced they&#x27;d be opening up their cellular network to devices other than cell phones with the big gotcha that all devices would have to be lab certified. Years went by and there was the Kindle and it was good. But now, with their announcement of their pre-certified cell data module, Bug Labs may finally deliver on the true promise of Verizon&#x27;s open network. By pre certifying their Bug Labs cell data module you will be able to add cell network enable any of your hardware projects! Now go my people and design that network enabled [remote car starter | condom vending machine | life blogging camera ] you&#x27;ve been dreaming about.&lt;&#x2f;p&gt;
+&lt;p&gt;Source &lt;a href=&quot;http:&#x2f;&#x2f;www.engadget.com&#x2f;2010&#x2f;09&#x2f;22&#x2f;bug-labs-to-offer-pre-certified-modules-for-verizons-network&#x2f;&quot;&gt;Engadget&lt;&#x2f;a&gt; via &lt;a href=&quot;http:&#x2f;&#x2f;bugblogger.com&#x2f;bug-labs-and-verizon-wireless-partner-604&#x2f;&quot;&gt;Bug Blogger&lt;&#x2f;a&gt;&lt;&#x2f;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

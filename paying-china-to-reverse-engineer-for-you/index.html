@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Paying China to reverse engineer for you</h2>
+    	<div class="info">
+    		<span>3 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>23 November 2017</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p><img src="/images/tumblr_inline_p1w3tj2wSz1rp3p4d_540.jpg" alt="image" /></p>
+<p>In 2016 while visiting Shenzhen factories for a client, I wanted to hunt the markets for my favorite toys, dumb wearables, in order to learn from the design and see what parts are common and cheap. I bought everything I could until I found these veryfit id101′s I liked.</p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p><img src="/images/tumblr_inline_ozdw1bQHiS1rp3p4d_540.jpg" alt="image" />
+<img src="/images/tumblr_inline_ozdw41O9MC1rp3p4d_540.jpg" alt="image" /></p>
+<p>The id101 have a <a href="https://www.nordicsemi.com/Products/nRF51-Series-SoC">Nordic nrf51</a> bluetooth chip which is what I use in my work, and which has two open source bluetooth stacks, <a href="https://mynewt.apache.org">Apache Mynewt</a> and <a href="https://www.zephyrproject.org">Zephyr</a>.</p>
+<p><img src="/images/tumblr_inline_ozdw2ib9Xz1rp3p4d_540.jpg" alt="image" /></p>
+<p>After charming my market contact by returning every few days to buy a handful more of them off her, I finally got back to a factory contact on WeChat. They’re made by <a href="http://www.idoosmart.com/index.html">idoosmart</a> and they agreed to a tour of the factory. I was quite impressed with what I saw. They were clean and had complete testing throughout including water pressure testing every unit as far as I could tell. These guys put out roughly 10k per line per day, and they had several full lines running. I got quotes for something like $9 bucks with no heartrate, and $12 bucks with heartrate in quantities as low as 100. I was paying ~$20 in the markets, and a year later now the id101 can be bought for $20-$40 from <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dsporting&amp;field-keywords=id+101">any one of many amazon resellers</a>.</p>
+<p>I grabbed one of the cheap USB oscilloscopes in the markets and sat at Gee Coffee Roasters to reverse engineer my board. I desoldered all the components and took a picture to mark up while I probed the board.</p>
+<p><img src="/images/tumblr_inline_ozdwf4DZ6O1rp3p4d_540.png" alt="image" /></p>
+<p>It wasn’t pretty but got the job done. I identified most of the components and connections.</p>
+<ul>
+<li>Printed on board: &quot;id101 ver 2.1 2016.06.13 3716&quot;</li>
+<li>Nordic nrf51822 qfaca1 1609ab - Bluetooth LE</li>
+<li>hnox ver 2.2 2016.4.19 - HR sensor</li>
+<li>Azoteq iqs263a - Captouch Controller</li>
+<li>na45e - Battery charge or voltage regulator (?)</li>
+<li>&quot;8c630 og155r&quot; sot-23-8? - Erm driver (?)</li>
+<li>&quot;2 w6 358411p ba 6&quot; (15pin flex ribbon cable to SSD1306 oled</li>
+<li>&quot;1187-02 hxs 2016.09&quot; - 4pin Digitizer 4</li>
+<li>&quot;ib 122&quot; LGA-12? maybe Bosch Bma250e accelerometer (?)</li>
+</ul>
+<p>Durning this time I finally met Ian and Jin from <a href="http://dangerousprototypes.com/">Dangerous Prototypes</a> who told me about their little known <a href="http://dangerousprototypes.com/store/reverse_engineering">Chinese reverse engineering</a> service. For $80 they’ll reverse engineer a populated 2 layer PCB to Protel in a few days. I handed over $80 and a freshly purchased id101. After a few days Jin got back to me and said it was taking a bit longer. I forgot about it and a few weeks later I had a zip file with some nice pics of a 4 layer (oops) board which presumably slowed them down.</p>
+<p><img src="/images/tumblr_inline_ozdxy8ETVb1rp3p4d_540.jpg" alt="image" /><img src="/images/tumblr_inline_ozdxymCnTb1rp3p4d_540.jpg" alt="image" /><img src="/images/tumblr_inline_ozdxyu3ZPP1rp3p4d_540.jpg" alt="image" /><img src="/images/tumblr_inline_ozdxz777Hk1rp3p4d_540.jpg" alt="image" /></p>
+<p>The zip also had the the Protel CAD files. Protel was apparently bought by Altium and is now subsumed into their ~$10k designer tool. I tried to obtain an old copy to run in a VM but it ended up being a huge pain in the ass and so I got bored and put this project down.</p>
+<p>Recently, I found out that Altium’s free (though otherwise uncompetitive) online design tool <a href="https://circuitmaker.com">Circuitmaker</a> will actually import Protel files including PCBS. I opened that old zip file in there and found it looking pretty good!</p>
+<p><img src="/images/tumblr_inline_ozdwkiJgrA1rp3p4d_540.png" alt="image" /></p>
+<p>It probably took me a day or two of stitching screenshots, probing nets and marking up images in order to get my jpg. My working rate aside, $80 to get a fully interactive view of the board is worth it in every case I can think of.</p>
+<p>Sadly, thats about where I left the id101 project. <a href="https://circuitmaker.com/Projects/Details/Jacob-Rosenthal/id101">Find the id101 uploaded to my Circuitmaker account </a>with the zipfile as an attachment. Something I’d love to try next would be to try to actually produce a device based on reverse engineered files.</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

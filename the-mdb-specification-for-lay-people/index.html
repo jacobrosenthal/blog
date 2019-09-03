@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>The MDB Specification for lay people</h2>
+    	<div class="info">
+    		<span>0 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>08 October 2011</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>I'm mainly working off of the specifications document by the NAMA people located at <a href="http://www.vending.org/technology/MDB_Version_4-1.pdf">http://www.vending.org/technology/MDB_Version_4-1.pdf</a></p>
+<p>Pinout:</p>
+<p>GRN 6 MCommon 3 NC
+RED 5 MTX 2 0DC BRN
+BLK 4 MRX 1 34DC WHT</p>
+<p>Serial Communications:</p>
+<p>9600</p>
+<p>1 start bit, 8 bits data, 1 mode bit, 1 check bit, 1 stop bit</p>
+<p>check bit</p>
+<ul>
+<li>drop carry byte, address+all data bytes.</li>
+<li>A checksum will not be performed on ACK, NAK, or RET bytes.</li>
+</ul>
+<p>mode bit-</p>
+<ul>
+<li>from vmc sets if byte is address</li>
+<li>from slave if last byte of data (or finished talking to master?)</li>
+</ul>
+<p>transmit nrz</p>
+<p>receive inverted</p>
+<p>Misc:</p>
+<p>&quot;Each peripheral should be polled every 25-200 milliseconds. This can be done by</p>
+<p>the POLL command or any other appropriate command.&quot;</p>
+<p>Mtx need to source 100ma in order to drive optos!</p>
+<p>Connectors:</p>
+<p>Vertical Header: Molex 39-28-1063 ~1.25 on digikey</p>
+<p>Right Angle Header: Molex 39-30-1060 ~1.25 on digikey</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

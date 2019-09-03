@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>LED Light Strip Hacked for Haptic Motors</h2>
+    	<div class="info">
+    		<span>2 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>27 August 2013</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p><img src="/images/tumblr_inline_pbyzrsBFEt1rp3p4d_540.jpg" alt="image" /></p>
+<p>Last week I got to talk at about my most recent hack, a flexible haptic strip that easy for anyone to use, at <a href="http://www.meetup.com/hack-and-tell/events/133694432/">Hack N Tell Round 25</a> in NYC.</p>
+<p>In between working for ASU's Cubic lab on a new <a href="https://en.wikipedia.org/wiki/Haptics">haptic</a> strip, I was pondering ways to bring haptics more to the forefront. Sure you can buy a <a href="https://www.sparkfun.com/products/8449">bare motor</a> or <a href="https://www.sparkfun.com/products/11008">lilypad motor</a> from Sparkfun or elsewhere, but in practice they're a total pain to get working. You need a transistor and its a pain to mount them anywhere you'd want them -- Especially when motors are only really fun when you have a few of them to play with. And lets not even address the cost of say 10 of these modules!</p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p>Then it hit me that the cheapest motor driver chip I could buy would be the &lt;14cent <a href="https://www.sparkfun.com/products/10444">WS28XX</a> series LED drivers that get used on LED light strips!</p>
+<p>Now, it's not necessarily THAT novel to use LED drivers to drive motors. Many people, including myself, have done it before, but I realized theres no reason I couldn't use the same flex PCB process as LED strips as a form factor as well.</p>
+<p>I don't yet know how to do flex PCB, and theres is no <a href="http://oshpark.com/">OSHPark</a> for flex PCB yet :) (paging <a href="http://tmblr.co/my2XegkiW-uJSjdBo6WGf5A">laen</a>) So I just found an <a href="http://www.ebay.com/sch/i.html?_trksid=p2047675.m570.l1313.TR11.TRC1.A0.Xws2801+strip&amp;_nkw=ws2801+strip&amp;_sacat=0&amp;_from=R40">LED strip</a> on ebay that used a common driver chip I liked, that wasn't integrated into the LED which is really common nowadays, and wasnt potted with epoxy or anything.</p>
+<p><img src="/images/tumblr_inline_pbyzrtt4HH1rp3p4d_540.jpg" alt="image" /></p>
+<p>The strips don't need many changes for motors. Just pulled the LEDs off and put a motor across one of the 3 channels, top to bottom. You can also add a little LED across one of these channels as well to get visual notification. Finally you'll want to use a multimeter to figure out which resistor hooks up to the motor so you can swap that resistor off for a shunt--You'll want as much current as the driver chip can give you. In the future you may want to add some motor protection with a flyback Schottky diode across where you put the motor to protect the LED driver chip.</p>
+<p>The additional beauty is theres already a great Arduino library called <a href="https://code.google.com/p/fastspi/">fastSPI</a> to run these! Just follow the directions for LED light strips. SCK to Pin 13, SDA to Pin 11. They should work on 3v or 5v but I've been running mine at 3v with more wearable Arduinos like the <a href="http://www.seeedstudio.com/depot/xadow-main-board-p-1524.html">Xadow</a> and <a href="https://www.sparkfun.com/products/11520">Fio V3</a>.</p>
+<p>And just like LEDs you can simply cut the strip anywhere you want, from 1 motor to 32, your choice!</p>
+<p>We've tried them in baseball caps and arms and legs. I think they'd work well sewn into a bag strap. Let me know what form factor you try! And hopefully in the future I'll be able to get them produced for cheaper than hacking them from ebay :)</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

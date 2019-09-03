@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Lightblue BeanBot</h2>
+    	<div class="info">
+    		<span>3 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>11 September 2014</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>You've Probably seen <a href="https://www.youtube.com/watch?v=xK54Bu9HFRw#t=19">kilobot swarm videos</a> going around.</p>
+<p><a href="tiwtter.com/monteslu">Luis</a> wanted something fun to do with his <a href="http://punchthrough.com/bean/">LightBlue Bean</a> so I set to turn my bean into a remote controlled swarm style bot.</p>
+<div class="video-container">
+    <iframe
+        src="https://www.youtube.com/embed/i1pIDjbR6YY"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen>
+    </iframe>
+</div>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p><strong>DESIGN</strong></p>
+<p>For construction I followed the rabbit hole to find the <a href="http://nereus.mech.ntua.gr/Documents/pdf_ps/ICRA206.pdf">original research for swarm bots</a>. Theres a lot of math, but the basics appear to be an equilateral triangle, 2 cylindrical motors opposite each other and the lowest possible friction so the vibrations can overcome it.</p>
+<p>I tried a couple designs with common parts and came up with this design:</p>
+<ul>
+<li>Bean</li>
+<li>3x ~30-50ohm resistor- bigger better because less current and longer battery life, but at some point the motor wont turn on...</li>
+<li>Hot glue</li>
+<li>Scrap &lt;.5 inch diameter, &gt;.5 inch thick to stick motors to safely (for me it was a laser cut scrap hexagon)</li>
+<li>2x 3v 10mm pancake motors</li>
+</ul>
+<p>For the resistors, basic math said had to be around 20-100 ohm resistor. I tried some out and was seeing about 1v drop across motor. Using an LED calculator presuming our 3v coin cell battery source, and wanting less than 40ma (arduino pin limit) of current you can <a href="http://led.linear1.org/1led.wiz">calculate for our 50-100ohm resistor</a>. I've found some motors are finicky to turn on at such low voltage though so I consider 30-50ohm the appropriate resistor.</p>
+<p>NOTE: Before the engineers write in, yes I know we should have <a href="http://en.wikipedia.org/wiki/Flyback_diode">flyback diodes</a> and frankly shouldnt stress the microcontroller pins as close to max current as we might be. We're not selling these things to the government. We'll be fine..</p>
+<p><strong>ASSEMBLY</strong></p>
+<p>Always remove the battery before operating on the bean. Its VERY easy to bridge stuff and you dont want to be done before we've started.</p>
+<p>We're using the resistors as legs to keep part count down and remove the need for jumpers or other wires. Note this means that the legs are live with voltage. Don't touch them to eacother or let them touch the rest of the board and dont drive on metal surfaces. But frankly with the Bean not in an enclosure you should be mindful of all that normally. Solder one of each to the A0 and D5 holes. Sadly theres no more holes near the center of gravity, so hot glue the third resistor the battery side which we'll call the front.</p>
+<p>Most motors have tape on them otherwise get some double sided tape and put the motors on either side of the spacer and tape it to the top of the ble chip. Again be careful not to touch metal to metal, use extra tape to protect if need be.</p>
+<p>Now solder down the same color wire on each motor to its nearest gnd pad. which ever color you pick will be if your bot drives 'forwards' or 'backwards', whatever that means. For me blue to resistor meant forward was toward battery and third leg resistor. Solder the other wire of each motor the top of the resistor.</p>
+<p>Now you can bend the legs as you like. You're going to have to play with them to get leftish, rightish and straightish motion so dont worry about it too much right now.</p>
+<p><strong>USE IT</strong></p>
+<p><a href="http://citizengadget.com/post/96226562047/firmata-on-lightblue-bean">Previously I've been working with firmata on bean over ble</a>. This has allowed me to develop js apps that can control my bean from the browser, mac, or mobile with the same codebase.  I think you can control pins from the bean iphone app, but I can't figure it out :)</p>
+<p><em>UPDATE</em> Luis has a post on <a href="http://blog.iceddev.com/2014-09-15-beanbots-rise-of-the-swarm.html">using node.js to control beans cross platform including mobile with phonegap</a>.</p>
+<p><strong>FEEDBACK</strong></p>
+<p>Let me know what you find. Does bending the legs a certain way lead to better results. Can you find a better common leg material? Care to program some swarm behavior? I'm <a href="https://twitter.com/jacobrosenthal">@jacobrosenthal</a> on twitter</p>
+<p><strong>STEERING <em>UPDATE</em></strong></p>
+<p>I've found it can be tough to change steering by just bending the resistors. Feedback so far has been that changing the resistor can be a more effective way of steering. If one of your motors seems to go, say, right really well, and the other goes only a little left or actually a little right, you can try lowering the resistor for that motor so it gets more power to pull that direction.</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

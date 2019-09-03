@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Firmata on LightBlue Bean</h2>
+    	<div class="info">
+    		<span>1 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>31 August 2014</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p><img src="/images/tumblr_inline_pbyzrshEbi1rp3p4d_540.jpg" alt="image" /></p>
+<p>Another day, another Firmata fork. I spent the last few days messing around with getting Firmata working on the <a href="http://punchthrough.com/bean/">LightBlue BLE Bean</a>. I had previously written the <a href="https://www.npmjs.org/package/ble-bean">Node NPM package for the Bean</a> as an exercise to get to know both Node and the Bean. Why not give it full Firmata control?</p>
+<p>You need firmata on your bean from <a href="https://github.com/jacobrosenthal/arduino/blob/bean/examples/StandardFirmata/StandardFirmata.ino">my clone</a> and <a href="https://twitter.com/monteslu">@monteslu</a> has put together a <a href="https://github.com/monteslu/bean-serial/tree/master/examples/firmata">node example turning my bean package into a serial port and hooking it to firmata.js!</a></p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p>The big gotchas Ive found so far are is that Punchthrough actually moved pins around in pins_arduino.h. There should be a fix for this but Standard firmata writes pins in order on the port.. So for now I'm just using the true pin names which map like so:</p>
+<p>a0 -&gt; a4-&gt;d18
+a1 -&gt; a5-&gt;d19
+d0 -&gt; d6 -- Unavailable right now from firmata
+d1 -&gt; d9 -- Unavailable right now from firmata
+d2 -&gt; d10
+d3 -&gt; d11
+d4 -&gt; d12
+d5 -&gt; d13</p>
+<p>Beyond that I would avoid all other pins which still exist and could be hooked up to anything for all I know. This sketch doesnt protect any pins. Setting anything else very well may take your bean offline or worse..</p>
+<p>Other than that I just added Bean.sleep at the end of loop to allow bean to sleep for power saves. Adjust to taste.</p>
+<p>Besides resolving the pin mapping, theres plenty to be done to make this a full port. There should be a more clear Firmata Boards.h entry to show the true available pins, and in Standard firmata we might look to protect other pins from being touched. I also havent tested servo/pwm/etc functionality, especially with the sleep addition...</p>
+<p>Note -- I've been using <a href="https://www.npmjs.org/package/firmata">firmata.js</a> for my Node firmata needs but we've found some problems with how chatty it is out of the box. It was designed for a serial cable world and we're quickly moving past that, though our PRs arent being accepted.  @monteslu has a <a href="https://github.com/monteslu/firmata/tree/nohandshake">firmata.js fork</a> up that we're now using exclusively</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

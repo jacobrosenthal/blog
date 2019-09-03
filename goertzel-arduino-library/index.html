@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Goertzel Arduino Library</h2>
+    	<div class="info">
+    		<span>1 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>25 June 2012</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>For my ongoing Arduino watch project, we want to be able to do frequency detection in order to blink an led to bass hits.</p>
+<p>There are a few Fast Fourier Transforms that have been written on Arduino including <a href="http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1286718155">this one</a> and <a href="http://elm-chan.org/works/akilcd/report_e.html">this one</a>. However, I needed my library to run on 8mhz clock along with whatever sampling rate change that would introduce. All the libraries I found were extremely optimized or poorly written with no abstraction so that I found it easier to start from scratch than attempt to use them.</p>
+<p>So I set about figuring out how to implement something myself. I quickly learned about something called the Goertzel algorithm for when you actually only need to find a single frequency, vs a whole range, allowing all the savings you would expect from that. I found a few generic implementations of that as well on <a href="http://en.wikipedia.org/wiki/Goertzel_algorithm">wikipedia</a> and <a href="http://www.eetimes.com/design/embedded/4024443/The-Goertzel-Algorithm">EEtimes</a> but nothing specifically for Arduino. I tried implementing the generalized version on wikipedia but had lots of trouble with datatypes and my ability to properly debug on Arduino hardware. The EE times implementation's link was broken but some google-fu found it the <a href="http://www.eetimes.com/Content/SourceCode/09banks.txt">demo code</a>. It was written in C that I could compile on my laptop and get sane results. Then I could move it to Arduino slowly while maintaining those sane results. With this method I was able to keep everything working as I transitioned the code to a full <a href="https://github.com/jacobrosenthal/Goertzel">Goertzel Arduino library</a>.</p>
+<p>I'm looking for feedback on how it should be implemented. Should it do the sample, or work on your existing array of samples? Is there an easier way to expose N and target frequency, perhaps some calculation or default? Let me know!</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

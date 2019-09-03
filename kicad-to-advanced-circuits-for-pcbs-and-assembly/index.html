@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Kicad to Advanced Circuits for PCBs and Assembly</h2>
+    	<div class="info">
+    		<span>5 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>22 February 2016</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>Advanced circuits is a very high quality United States board house. They have a cheapish PCB service called <a href="http://www.4pcb.com/33-each-pcbs/">33each</a> for small runs, though it generally doesn't compete with <a href="https://oshpark.com/">OSHPark</a> if you ask me. Its only when you're doing a bunch of boards (~20-50) that they really shine. And, if you're doing boards through them, they offer assembly as well at frankly competitive prices to the DIY alternative <a href="http://www.smallbatchassembly.com/">Small Batch Assembly</a>.</p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p>You can choose as fast as 2 days, or 20 days with the cost on a sliding scale. For reference, my qty 50 ~1″x1″ nrf51 bluetooth boards were all told under 2k assembled in 5 days. Always check their <a href="http://www.4pcb.com/4pcb-monthly-specials.html">specials page</a> to take a few hundred off your order, too.</p>
+<p>For using Kicad for Design for Manufacture, you need to start with <a href="https://rheingoldheavy.com/design-assembly-kicad/">this excellent post from Rheingold Heavy</a> which has inline responses from Small Batch.</p>
+<p>Almost everything in that article is relevant from storing BOM data in eeschema elements, fiducials, to viewing gerbers in gerbview. We’ll talk about exceptions below.</p>
+<p>For PCBs, sadly Kicad doesn’t have design rules (dru) like Eagle does. Advanced's standard (cheapest) board service, <a href="http://www.4pcb.com/pcb-design-specifications/">lists tolerances</a> but remember these are all negotiable with a big board house like this! If you need tighter just talk to your rep and see if theres a cost.</p>
+<p>So for a standard cheap board, with the inches icon on left on, click Design Rules-&gt;Design Rules and for all nets set:</p>
+<ul>
+<li>Clearance no less than .008″</li>
+<li>Track width no less than .008″</li>
+<li>Via diameters no less .020″</li>
+<li>Via drill no less than .010″ (ie a 5mil annular ring)</li>
+</ul>
+<p>Another issue that wasn’t caught by FreeDFM initially was board edge clearance. There doesn’t appear to be a way to set this in Kicad, but you need to leave .015″ clearance of pads, vias, AND copper pours in order for them to separate your boards after manufacture and assembly. Make sure to move all your components an zones away from the edge, or just move your board edge back that much on all sides.</p>
+<p>To generate the gerbers in pcbnew, click plot icon or File-&gt;Plot. <a href="https://www.wayneandlayne.com/blog/2013/02/27/kicad-tutorial-gerber-file-generation/">This Wayne and Layne post on Gerber generation</a> was super helpful here.</p>
+<ul>
+<li>Layers, probably F.Cu (Top Copper), B.Cu(Bottom Copper) F.Paste(Top Solder Paste) F.Silk (Top Silkscreen), B.Silk (Bottom Silkscreen), B.Mask (Bottom soldermask), F.Mask (Top soldermask)</li>
+<li>Options, You might have other stuff checked, but the important one is to make sure Exclude PCB edge layer from other layers is unchecked as Advanced doesn’t take a separate edge cuts layer. Another nicety is check use auxiliary axis as origin so when you view in gerbview the file is in the center of the screen.</li>
+<li>Gerber Options, click Protel filename Options.</li>
+<li>Finally, Click Plot.</li>
+</ul>
+<p>Now to generate the drill file, click Generate Drill File.</p>
+<ul>
+<li>Drill Units, use inches</li>
+<li>Zeros format suppress leading zeros</li>
+<li>Drill Map doesn’t matter</li>
+<li>Files options uncheck mirror y, use minimal header, and if you have non plated holes, Advanced takes a separate file for plated and non plated so make sure merge pth and npth holes into one file is unchecked.</li>
+<li>Drill Origin Auxiliary axis presuming you used &quot;auxiliary axis as origin&quot; in the plot screen.</li>
+<li>Finally, click Drill File then Close and Close and you Gerbers are in your project directory under GerberOutput</li>
+</ul>
+<p>As the Rheingold article mentions, use gerbview to check your designs locally, then zip and upload them to <a href="http://www.freedfm.com">Advanced’s FreeDFM</a> tool for further error and tolerance checking and tweak as needed.</p>
+<p>One issue that wasn’t caught by FreeDFM was board edge clearance. There doesn’t appear to be a way to set this in Kicad(?), but you need to leave .015″ clearance of pads, vias, AND copper pours from board edges in order for them to separate your boards after manufacture and assembly. Make sure to move all your components an zones away from the edge, or just expand your board size that much on all sides.</p>
+<p>Once your PCB is looking good, next you’ll need your BOM in excel format. Like in the Rheingold article, use BOM generation in eeschema. But what is different, you’ll need a grouped BOM layout (all like values and parts on same line). Luckily Kicad forum user Wolf wrote a Kicad BOM plugin for that, posted on the <a href="https://forum.kicad.info/t/bom-grouped-by-reference/261">Kicad forums as bom2groupedCsv</a>. But you’ll also need it converted to xlsx for your rep. so <a href="https://gist.github.com/jacobrosenthal/99f506df5ca4cea7182a">I wrote a python script for that</a>. Just run it with the only input the name of the BOM (by default is the name of the project no extension) ./csv2xls.py projectname</p>
+<p>Finally you need your placement File-Fabrication Outputs-&gt;position (.pos). They call this a CPL file. Unlike in the article for for Small Batch Assembly you don’t need to change header names or merge any other BOM data on it, Advanced can pivot with the existing Ref, Val, and Package fields just fine. One note though, they don’t currently use the rotation data (Rot), so you need to have your pin1's marked nicely on your PCB silk! Finally, they'll take it columnar tab separated as it comes out of Kicad, so no need to format to xlsx or anything else for this one.</p>
+<p>Finally, you have everything you need. Grab your final revision PCB quote number from FreeDFM, and <a href="http://www.4pcb.com/Assembly-Specials.html">contact your regional rep via email</a> for an assembly quote. When they reply, also give them your xlsx BOM and .pos placement BOM. You might need to approve part substitutions, or if you’re stubborn, work to send them a reel of the parts you want used, but mostly Ive found if the part was well stocked on <a href="https://www.digikey.com/">Digikey</a>, Advanced would supply it for me.</p>
+<p>Good Luck!</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

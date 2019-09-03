@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Automated Build Testing for Arduino Libraries</h2>
+    	<div class="info">
+    		<span>2 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>01 April 2015</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>So much can go wrong between your code and the Arduino in the real world. Its vital to keep removing the possible errors in this chain. The lowest hanging fruit we're missing in the Arduino community is testing. We should really be <a href="https://en.wikipedia.org/wiki/Unit_testing">unit testing</a> our code logic to see that it does exactly what we think it does, but until that day we can do something even simpler. We can test that our code actually builds!</p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p>To see a working example, check out one of my libraries called <a href="https://github.com/jacobrosenthal/NullStream">NullStream</a>. Its goofy but useful library that creates a Serial object that doesn’t actually do anything with data you .write to it. /dev/null for Arduino. You’ll notice the only difference from a regular Arduino library on Github is the .travis.yaml file. I’m using a free service called Travis to monitor my repo and when it sees new code create a server to do whatever I want! As of Arduino ~1.5.2 you've actually been able to build Arduino code from the command line, so we ask Travis to download Arduino, move some stuff around, and try to build our code.</p>
+<p>To get setup on your own repo follow the Travis <a href="http://docs.travis-ci.com/user/getting-started/#Step-one%3A-Sign-in">getting started guide</a> to sign in and enable Travis on your Github profile. When you get to step three you'll need a .travis.yaml file, grab my <a href="https://gist.github.com/jacobrosenthal/ffeadc44ebcc03b9b09b">Arduino command line Travis testing example</a>. Travis have a nice <a href="http://docs.travis-ci.com/user/build-configuration/">guide</a> explaining the configuration file.</p>
+<p>At the very least you’ll need to change NAME=NullStreamExample to NAME=Whatever your example sketch is called. Note: This example doesn’t download any non Arduino libraries (except for the one under test) -- If your library depends another library take a look at the .travis.yaml file and try to use wget to download and 'install' another library. Save the file to your Github repo as .travis.yaml, git add it, commit and push, and check your<a href="https://travis-ci.org/repositories"> dashboard</a> to watch Travis work its magic.</p>
+<p>If you have a build error don’t fret. There are build logs you can examine for the error message.</p>
+<p><img src="/images/tumblr_inline_nm4bct7xC01rp3p4d_540.png" alt="image" /></p>
+<p>Tests should only take a few minutes. If they’re taking longer and timing out thats Arduino failing silently and hanging open because some build option or path was incorrect. You sadly just need to keep trying different options until you can get it to tell you something useful. When you're all done re-commit and repeat until its all ironed out.</p>
+<p>Once you get everything working, it is really nice to show your users by adding a status badge. Follow the <a href="http://docs.travis-ci.com/user/status-images/">directions</a> to find your generated markdown text and paste it to the top of your README.md file.</p>
+<p><img src="/images/tumblr_inline_nm4badybdK1rp3p4d_540.png" alt="image" /></p>
+<p>In the future if you push code that doesn’t work Travis will email you and that badge will turn red alerting you something is wrong. As we said, there is a lot more we could do, but this is a great start.</p>
+<p>So, now you can guarantee your code builds on an Arduino Uno. But lately there are 10s of Arduino models, what about those?  Some Arduino’s have more or less memory, or more or less Serial ports or different architectures like Microchip or Arm. Do you know which boards your code supports? For extra credit you could change the configuration file to check that your code builds on a bunch of them!</p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Fakerbot Lives</h2>
+    	<div class="info">
+    		<span>2 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>01 March 2011</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>[This post is from our <a href="http://wiki.heatsynclabs.org/wiki/Fakerbot">3dprinting wiki</a> and is being added here and backdated for completeness]</p>
+<p>The machine is called a FakerBot, because it's not quite a MakerBot, but there is a direct lineage. Since we didn't have access to a laser-cutter and we wanted to do it on the cheap, the frame was slightly redesigned by Corey so that it could be cut on a tablesaw from inch material. The tongue and groove construction was replaced with dado-cut slots. All holes were made with a 7/8&quot; forstner bit, this allows them to take a skate bearing (a paper shim is required) or anything else that we wanted through the use of adapter plates since we knew that mods were likely. Total cost of the enclosure was $13 for a sheet of 1/4&quot; (actually 5.2mm) Luan from Home Despot which provided enough material to make four FakerBots even though we only made one. A laser-cut frame would have cost about $200 form Makerbot, so we saved a lot here. The frame was finished with linseed oil and came out pretty nice. MakerBot specified precision shafting for the X&amp;Y axis which is unnecessary for a low-tech motion control system like this one. Drill rod was substituted for all linear shafting at a total cost of about $3 which is another $20 or $30 reduction. Similarly, low-cost nylon bushings were substituted for the more expensive MakerBot spec'd parts. The X and Y stages on the MakerBot are pretty good aside from being too tall, however the Z-stage is a horrible design. It is overly complex, wobbly, prone to jamming, etc. A replacement z-stage was designed by Corey with the goal of making Z simple and reliable:</p>
+<p><strong>The following parts from the Makerbot design were removed:</strong></p>
+<ul>
+<li>(1) Belt</li>
+<li>(8) Bearings</li>
+<li>(1) Driving Pulley</li>
+<li>(4) Driven Pulleys</li>
+<li>(2) Idler Pulleys</li>
+<li>(1) Platform</li>
+<li>(2) Extruder Mounts (Dragons)</li>
+<li>(4) All-thread Rods (leadscrews)</li>
+<li>(4) Driven nuts (leadnuts)</li>
+<li>assorted screws and hardware</li>
+</ul>
+<p><strong>That giant steaming pile of hardware was replaced with:</strong></p>
+<ul>
+<li>(1) 1/4-20 Acme leadscrew</li>
+<li>(1) Antibacklash nut</li>
+<li>(1) shaft coupler</li>
+<li>(1) Cantilever arm (laser cut)</li>
+<li>(1) Linear rail</li>
+<li>(1) Truck for linear rail</li>
+</ul>
+<p><strong>An overall reduction from (27) functional components down to (6) !</strong></p>
+<p>If you count every nut and screw the reduction is far greater, but you get the idea. The new Z-stage is a big improvement and has eleminated all of the jamming and wobbling problems that we had previously. It also looks far better.</p>
+<p>The extruder is Corey's design hosted at <a href="http://www.thingiverse.com/thing:4579">http://www.thingiverse.com/thing:4579</a>. It is a clean-sheet of paper design that sprang from the frustration of dealing with the shortcomings of other extruders. So far the CoreyStruder and its derivatives have been downloaded on Thingiverse over 250 times.</p>
+<p>The hot-end is Corey's copy of the hot-end used on the UP! printer which he later discovered is actually a copy of Nophead's design. It is very compact and works well. Nophead does awesome work, his blog is a must-read:</p>
+<p><a href="http://hydraraptor.blogspot.com/">http://hydraraptor.blogspot.com/</a></p>
+
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>

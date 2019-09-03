@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Citizen Gadget</title>
+
+      <!-- css -->
+      <link rel="stylesheet" href="/reset.css">
+      <link rel="stylesheet" href="/feather.css">
+
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+      <!-- js -->
+      <script src='/js/images.js'></script>
+      <script src='/js/main.js'></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+      
+
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2f;&#x2f;citizengadget.com&#x2f;rss.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+
+    <a href="/">
+      <div class='header-image' style='background-image: url(&#x2f;images&#x2f;header.png);'></div>
+    </a>
+
+    
+<div class='container'>
+  <section class="post">
+  	<div class="title-and-info">
+    	<h2>Altering New Soft Serial NSS for 9 bit- cans of open source worms</h2>
+    	<div class="info">
+    		<span>2 minute read</span>
+    		
+    			<span class='divider'/>
+    			<span>25 October 2011</span>
+    		
+    		
+    		
+    	</div>
+    </div>
+  	<article>
+  		<p>It looked like I should just be able to alter newsoftserial.cpp and newsoftserial.h  to take a uint_16 instead of 8, and then just step over 9 bits instead of 8 and I should have a pretty simple solution for RX.</p>
+<p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<p>My first problem is NSS sadly virtualizes print so need to break stock install in order to move forward. I don't like it but for now I'm going to continue. I can alter hardwareserial.h and print.h to take the uint_16 as well and I'm good.</p>
+<p>Another problem I found was NSS doesn't seem to properly (or fully?) implement print.  Neither dec, hex, bin are working to get raw data out, its always ascii format.  In researching I've found .write will do binary in both the print library, and nss, but nss has it marked private.  Found a forum post on adafruit where the writer of NSS claimed he was making .write public 3 years ago. Hah.</p>
+<p>I believe I've come up with an elegant change to the NSS code to step over an arbitrary number of bits, making the code eventually able to support up to 16 bit serial if you'd want to. In the original code they simply shift left a binary 1 and use that as the mask for the bit to write, eventually shifting the 1 off the 8 bit number exiting the loop.</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">for (byte mask = 0x01; mask; mask &lt;&lt;= 1)
+{
+  if (b &amp; mask) // choose bit
+    tx_pin_write(LOW); // send 1
+  else
+    tx_pin_write(HIGH); // send 0
+
+  tunedDelay(_tx_delay);
+}
+
+tx_pin_write(LOW); // restore pin to natural state
+</span></pre>
+<p>I decided with a small change I could create a definable mask which could fit in this system</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">uint16_t limit = 0x200; // 9 would be x200, 10 would be x400
+
+for (uint16_t mask = 0x0001; mask&lt;limit; mask &lt;&lt;= 1)
+{
+  if (b &amp; mask) // choose bit
+    tx_pin_write(LOW); // send 1
+  else
+    tx_pin_write(HIGH); // send 0
+
+  tunedDelay(_tx_delay);
+}
+
+tx_pin_write(LOW); // restore pin to natural state
+</span></pre>
+<p>So, does it work?  I pulled out my trusty</p>
+<p><a href="http://dangerousprototypes.com/bus-pirate-manual/">Bus Pirate v2go</a></p>
+<p>(a must have) and was able to send some data over and confirm! Interesting note, despite my upgrading to the newest version which the version notes claimed to support 9 bit, the but pirate can't actually read a 9 bit, i just drops the MSB...  I made support forum post but so far nothing. I pulled the existing vending machine's line off and pipe it into arduino and was able to receive packets which when decoded made sense:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">B 0000 1011  CHANGER  POLL B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER 12 0001 0010 cashless device? POLL 12 0001 0010 cashless device? 12 0001 0010 cashless device? 12 0001 0010 cashless device? 12 0001 0010 cashless device? 12 0001 0010 cashless device? 34 0011 0100 bill validator 0 ACK to Bill Validator? 0 0 0 34 0011 0100 bill validator 34 0011 0100 bill validator 0 0 0 0 34 0011 0100 bill validator 34 0011 0100 bill validator 0 0 0 0 34 0011 0100 bill validator C 0000 1100 Changer 0 ACK F 0000 1111  CHANGER 0 Ack F 0000 1111  CHANGER 2A 0010 1010 energy mgmt ?? B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER B 0000 1011  CHANGER
+</span></pre>
+  	</article>
+  </section>
+
+  
+
+</div>
+
+
+    <footer>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      
+    </footer>
+
+    </body>
+
+</html>
